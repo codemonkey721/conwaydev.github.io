@@ -6,15 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Justin Conway Chicago based Front-End Developer
+title: Justin Conway Chicago based Front End Developer
 email: justin@conwaydev.com
 description: > # this means to ignore newlines until "baseurl:"
-  Justin Conway is a Front-End Web Developer currently working at Sprout Social
+  Justin Conway is a Front End Web Developer currently working at Sprout Social
   as a part of the Marketing Development team. He has over 7 years of experience
   solving problems with web technologies and is always looking to contribute to
   challenging and innovative web products.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://conwaydev.github.io" # the base hostname & protocol for your site
+url: "http://conwaydev.com" # the base hostname & protocol for your site
 twitter_username: conwaydev
 github_username:  conwaydev
 

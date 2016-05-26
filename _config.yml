@@ -2,7 +2,7 @@
 title: Justin Conway Chicago based Front End Developer
 email: justin@conwaydev.com
 description: > # this means to ignore newlines until "baseurl:"
-  Justin Conway is a Chicago based Front End Developer passionate about the web and pork.
+  Justin Conway is a Chicago-based Front End Developer passionate about the web and pork.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://conwaydev.com" # the base hostname & protocol for your site
 twitter_username: conwaydev

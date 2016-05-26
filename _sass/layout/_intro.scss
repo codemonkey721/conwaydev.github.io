@@ -1,6 +1,8 @@
 .Intro {
   background: $yellow;
+  color: $black;
   &--description {
+    padding: 2rem 0;
     a {
       @include bold-font;
       color: $blue;
@@ -21,6 +23,6 @@
   &--title {
     @include bar;
     color: $navy;
-    margin: 2rem 0 4rem;
+    margin-bottom: 4rem;
   }
 }

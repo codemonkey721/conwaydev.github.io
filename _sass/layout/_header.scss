@@ -1,0 +1,50 @@
+.header {
+  padding: 1rem 0;
+  .row {
+    align-items: center;
+  }
+  a {
+    color: $navy;
+    &:hover {
+      color: $blue;
+    }
+  }
+  &--title {
+    @include serif-font;
+    font-size: $font-size-small;
+    &:hover svg {
+      fill: $yellow;
+    }
+  }
+  &--title svg {
+    display: none;
+    vertical-align: middle;
+    fill: $blue;
+    @media (min-width: 52rem) {
+      display: inline-block;
+    }
+  }
+  &--nav {
+    display: none;
+    text-align: right;
+    @media (min-width: 52rem) {
+      display: block;
+    }
+  }
+  &--nav ul {
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+    li + li {
+      margin-left: 1rem;
+    }
+    li a {
+      position: relative;
+      display: inline-block;
+      &:hover {
+        @include bar($bar-height: 3px, $bar-width: 100%, $bar-color: $blue);
+      }
+    }
+  }
+}

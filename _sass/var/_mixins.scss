@@ -1,0 +1,36 @@
+@mixin serif-font() {
+  font-family: "GT Walsheim", serif;
+  font-weight: 400;
+}
+
+@mixin bold-font() {
+  @include serif-font;
+  font-weight: 600;
+}
+
+@mixin bar( $bar-height: .75rem, $bar-width: 25%, $bar-color: $white ) {
+  position: relative;
+  &::after {
+    content: "";
+    border-bottom: $bar-height solid rgba($bar-color, .75);
+    position: absolute;
+    bottom: -$bar-height;
+    left: 0;
+    width: $bar-width;
+    transition: opacity .25s, color .25s;
+  }
+}
+
+@mixin image-overlay( $color: $navy ) {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($navy, .8);
+    pointer-events: none;
+  }
+}

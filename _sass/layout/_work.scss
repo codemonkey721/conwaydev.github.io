@@ -1,0 +1,19 @@
+.Work {
+  background: $light-grey;
+  margin-top: 1rem;
+  &--item {
+    text-align: center;
+    margin-bottom: 1rem;
+    h4 {
+      background: $yellow;
+      margin: 0;
+      font-size: $font-size-small;
+      color: $white;
+      padding: 1rem;
+    }
+    figure {
+      background: $navy;
+      padding-bottom: 75%;
+    }
+  }
+}

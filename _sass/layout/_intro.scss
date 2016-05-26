@@ -1,0 +1,26 @@
+.Intro {
+  background: $yellow;
+  &--description {
+    a {
+      @include bold-font;
+      color: $blue;
+      &:hover {
+        color: $navy;
+      }
+    }
+  }
+  &--portrait {
+    @include image-overlay;
+    display: block;
+    background: url('/assets/me.jpg') top center no-repeat / cover;
+    padding-bottom: 75%;
+    @media (min-width: 52rem) {
+      padding-bottom: 50%;
+    }
+  }
+  &--title {
+    @include bar;
+    color: $navy;
+    margin: 2rem 0 4rem;
+  }
+}

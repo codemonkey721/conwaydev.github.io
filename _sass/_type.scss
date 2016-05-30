@@ -42,8 +42,16 @@ body {
   line-height: 1.45;
 }
 
+ul,
+ol,
+figure,
 p {
   margin-bottom: 1.3rem;
+}
+
+ul,
+ol {
+  padding-left: 1rem;
 }
 
 h1,

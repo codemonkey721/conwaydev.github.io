@@ -3,6 +3,18 @@
 }
 
 .Post {
+  h2,
+  h3,
+  h4 {
+    color: $navy;
+  }
+  h2,
+  h3,
+  h4,
+  figure,
+  pre {
+    margin-bottom: 1.3rem;
+  }
   &--date {
     @include serif-font;
     position: relative;

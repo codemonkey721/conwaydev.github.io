@@ -42,6 +42,14 @@ a {
   }
 }
 
+pre {
+  display: block;
+  background: $grey;
+  color: $yellow;
+  padding: 1rem;
+  overflow: auto;
+}
+
 .scr-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -83,7 +91,7 @@ a {
 
 .Tweets {
   display: block;
-  background: $blue;
+  background: $grey;
   &--container {
     padding: 1rem;
   }

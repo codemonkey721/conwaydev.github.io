@@ -11,7 +11,11 @@
   }
   &--title {
     @include serif-font;
+    display: block;
     font-size: $font-size-small;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     &:hover svg {
       fill: $yellow;
     }

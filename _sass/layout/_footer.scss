@@ -7,19 +7,20 @@
   }
   &--info {
     background: $blue;
-    padding: .5rem 1rem;
+    padding: .5rem;
     font-size: $font-size-small;
   }
   &--social {
     text-align: right;
+    font-size: 0;
   }
   &--social a {
     display: inline-block;
     svg {
       fill: $yellow;
       display: block;
-      height: 20px;
-      width: 20px;
+      height: 30px;
+      width: 30px;
       @media (min-width: 52rem) {
         height: 40px;
         width: 40px;

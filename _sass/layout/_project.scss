@@ -1,0 +1,25 @@
+.Project {
+    &--image {
+        display: none;
+        @media (min-width: 52rem) {
+            display: block;
+            margin: 1rem 0;
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+    &--title {
+        @include serif-font;
+        position: relative;
+        font-size: $font-size-base;
+        color: $navy;
+        border-top: 3px solid $blue;
+        display: inline-block;
+        padding-top: .5rem;
+        margin: 0;
+    }
+    &--description {
+        font-size: $font-size-small;
+    }
+}

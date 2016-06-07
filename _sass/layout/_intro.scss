@@ -23,6 +23,9 @@
   &--title {
     @include bar;
     color: $navy;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    @media (min-width: 52rem) {
+      margin-bottom: 4rem;
+    }
   }
 }

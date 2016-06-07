@@ -12,3 +12,14 @@ github_username:  conwaydev
 markdown: kramdown
 
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  -
+    scope:
+      type: "projects"
+    values:
+      layout: "projects"

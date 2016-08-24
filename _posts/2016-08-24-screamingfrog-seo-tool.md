@@ -23,7 +23,7 @@ Well of course you're an incredible web developer who is the Michael Jordan of w
 
 ![Response Time](/assets/img/response-time.jpg)
 
-All you need to do is filter by "Response Time" in the main crawl. As you can see that highest one has an 8 second response time. I uh, gotta go fix something...
+All you need to do is filter by "Response Time" in the main crawl!
 
 ### 2. Finding All Lazy Loaded Images
 

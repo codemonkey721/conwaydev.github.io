@@ -9,7 +9,7 @@ Even though I’m trying not to rely on JS build systems as much anymore and rat
 
 #### What is gulp?
 
-![gulp](/assets/img/gulp.png)
+![gulp](/assets/img/gulp.jpg)
 
 From https://github.com/gulpjs/gulp it is described as:
 

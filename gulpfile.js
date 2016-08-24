@@ -4,6 +4,7 @@ var browserSync = require('browser-sync');
 var prefix = require('gulp-autoprefixer');
 var minify = require('gulp-clean-css');
 var plumber = require('gulp-plumber');
+var uncss = require('gulp-uncss');
 var cp = require('child_process');
 
 gulp.task('jekyll-build', function (done) {
@@ -29,8 +30,14 @@ gulp.task('sass', function(){
         .pipe(prefix('last 2 versions'))
         .pipe(minify())
         .pipe(gulp.dest('_site/css'))
+        .pipe(uncss({
+            html: [
+                'index.html',
+                '_site/blog/**/*.html'
+            ]
+        }))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('_includes'))
         .pipe(plumber())
 });
 

@@ -15,6 +15,11 @@
   pre {
     margin-bottom: 1.3rem;
   }
+  blockquote {
+    border-left: 3px solid $grey;
+    padding-left: 1.3rem;
+    color: $grey;
+  }
   &--date {
     @include serif-font;
     position: relative;
@@ -29,6 +34,18 @@
     color: $blue;
     a {
       display: block;
+    }
+  }
+  &--content {
+    margin-top: 1.3rem;
+    * + p,
+    * + blockquote {
+      margin-top: 1.3rem;
+    }
+    iframe {
+      display: block;
+      max-width: 100%;
+      margin: 2.6rem auto;
     }
   }
 }

@@ -24,17 +24,15 @@ layout: default
     <div class="row">
         <div class="col-xs-12 col-md-6">
             <div class="Posts">
-                {% for post in site.posts %}
-                    <article class="Post">
-                        <div class="Post--date">{{ post.date | date: "%b %-d, %Y" }}</div>
+                <article class="Post">
+                    <div class="Post--date">{{ site.posts.first.date | date: "%b %-d, %Y" }}</div>
 
-                        <h2 class="Post--title">
-                            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                        </h2>
+                    <h2 class="Post--title">
+                        <a href="{{ site.posts.first.url | prepend: site.baseurl }}">{{ site.posts.first.title }}</a>
+                    </h2>
 
-                        <div class="Post--content">{{ post.excerpt }}</div>
-                    </article>
-                {% endfor %}
+                    <div class="Post--content">{{ site.posts.first.excerpt }}</div>
+                </article>
             </div>
         </div>
         <div class="Tweets col-xs-12 col-md-6">

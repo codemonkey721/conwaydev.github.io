@@ -78,7 +78,10 @@ pre {
   background: $light-grey;
 }
 .section._padded {
-  padding: 4rem 0;
+  padding: 2rem 0;
+  @media (min-width: 52rem) {
+    padding: 4rem 0;
+  }
 }
 .section._flushed .row {
   margin-left: 0;
@@ -94,15 +97,15 @@ pre {
   background: $grey;
   &--container {
     padding: 2rem 1rem;
+    @media (min-width: 52rem) {
+      > * {
+        width: 100% !important;
+      }
+    }
   }
   h4 {
     color: $yellow;
     margin-top: 0;
-  }
-  @media (min-width: 52rem) {
-    #twitter-widget-0 {
-      width: 100% !important;
-    }
   }
 }
 

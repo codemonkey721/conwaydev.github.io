@@ -68,6 +68,8 @@ pre {
 
 .row {
   @include make-row();
+  margin-left: 0;
+  margin-right: 0;
   .no-flexbox & {
     display: table;
     width: 100%;
@@ -114,7 +116,7 @@ pre {
     display: block;
   }
   &--container {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     @media (min-width: 52rem) {
       > * {
         width: 100% !important;

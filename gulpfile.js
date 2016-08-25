@@ -27,7 +27,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 gulp.task('sass', function(){
     return gulp.src('_sass/main.scss')
         .pipe(sass())
-        .pipe(prefix('last 2 versions'))
+        .pipe(prefix('last 3 versions'))
         .pipe(minify())
         .pipe(gulp.dest('_site/css'))
         .pipe(uncss({

@@ -11,8 +11,12 @@
     font-size: $font-size-small;
   }
   &--social {
-    text-align: right;
-    font-size: 0;
+    display: flex;
+    @media (min-width: 52rem) {
+      > *:first-child {
+        margin-left: auto;
+      }
+    }
   }
   &--social a {
     display: inline-block;

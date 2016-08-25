@@ -4,9 +4,9 @@ layout: default
 
 <section class="Intro section _flushed">
     <div class="row">
-        <div class="Intro--portrait col-xs-12 col-md-6"></div>
+        <div class="Intro--portrait column _split"></div>
 
-        <div class="Intro--description col-xs-12 col-md-6">
+        <div class="Intro--description column _split">
             <div class="wrapper">
                 <h1 class="Intro--title">Justin Conway</h1>
 
@@ -22,7 +22,7 @@ layout: default
 
 <section class="section _flushed">
     <div class="row">
-        <div class="col-xs-12 col-md-6">
+        <div class="column _split">
             <div class="Posts">
                 <article class="Post">
                     <div class="Post--date">{{ site.posts.first.date | date: "%b %-d, %Y" }}</div>
@@ -35,16 +35,14 @@ layout: default
                 </article>
             </div>
         </div>
-        <div class="Tweets col-xs-12 col-md-6">
+        <div class="Tweets column _split">
             <div class="Tweets--container">
                 <h4>Twitter</h4>
 
-                <a class="twitter-timeline"
+                <a class="twitter-timeline js-tweets"
                    href="https://twitter.com/conwaydev"
                    data-widget-id="351951321798168576"
                    data-chrome="noheader nofooter noborders transparent">Tweets by @conwaydev</a>
-
-                <script async>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
         </div>
     </div>

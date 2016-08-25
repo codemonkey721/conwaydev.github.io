@@ -66,6 +66,29 @@ pre {
   margin: 0 auto;
 }
 
+.row {
+  @include make-row();
+  .no-flexbox & {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    vertical-align: middle;
+  }
+}
+
+.column {
+  @include make-col-ready(12);
+  &._split {
+    @media (min-width: 52rem) {
+      @include make-col(6);
+      .no-flexbox & {
+        display: table-cell;
+        width: 50%;
+      }
+    }
+  }
+}
+
 .section {
   a {
     color: $blue;
@@ -73,28 +96,23 @@ pre {
       color: $navy;
     }
   }
-}
-.section._gray {
-  background: $light-grey;
-}
-.section._padded {
-  padding: 2rem 0;
-  @media (min-width: 52rem) {
-    padding: 4rem 0;
+  &._gray {
+    background: $light-grey;
   }
-}
-.section._flushed .row {
-  margin-left: 0;
-  margin-right: 0;
-  > * {
-    padding-left: 0;
-    padding-right: 0;
+  &._padded {
+    padding: 2rem 0;
+    @media (min-width: 52rem) {
+      padding: 4rem 0;
+    }
   }
 }
 
 .Tweets {
-  display: block;
+  display: none;
   background: $grey;
+  @media (min-width: 52rem) {
+    display: block;
+  }
   &--container {
     padding: 2rem 1rem;
     @media (min-width: 52rem) {
@@ -109,13 +127,3 @@ pre {
   }
 }
 
-.section-title {
-  display: inline-block;
-  background: $navy;
-  font-size: 1.25rem;
-  color: $white;
-  border-bottom: 2px solid $yellow;
-  margin: 0;
-  padding: 1rem 2rem;
-  font-weight: 700;
-}

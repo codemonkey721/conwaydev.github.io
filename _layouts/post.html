@@ -4,21 +4,17 @@ layout: default
 
 <section class="section _padded _gray">
   <div class="wrapper">
-    <div class="row">
-      <div class="col-xs-12 col-md-8" style="margin: 0 auto;">
-        <article class="Post">
-          <p class="Post--date">
-            {{ page.date | date: "%b %-d, %Y" }}
-          </p>
-          <h1 class="Post--title">
-            {{ page.title }}
-          </h1>
+    <article class="Post">
+      <p class="Post--date">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </p>
+      <h1 class="Post--title">
+        {{ page.title }}
+      </h1>
 
-          <div class="Post--content">
-            {{ content }}
-          </div>
-        </article>
+      <div class="Post--content">
+        {{ content }}
       </div>
-    </div>
+    </article>
   </div>
 </section>

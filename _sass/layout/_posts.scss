@@ -3,6 +3,8 @@
 }
 
 .Post {
+  max-width: 860px;
+  margin: 0 auto;
   h2,
   h3,
   h4 {
@@ -30,10 +32,14 @@
     padding-top: .5rem;
   }
   &--title {
-    margin-top: 0;
-    color: $blue;
     a {
       display: block;
+    }
+    font-size: $font-size-medium;
+    margin-top: 0;
+    color: $blue;
+    @media (min-width: 52rem) {
+      font-size: $font-size-large;
     }
   }
   &--content {

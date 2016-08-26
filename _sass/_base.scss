@@ -25,6 +25,10 @@ strong {
   @include bold-font;
 }
 
+figure {
+  margin: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -39,6 +43,28 @@ a {
   }
   img {
     transition: opacity .25s;
+  }
+}
+
+.button {
+  @include bold-font;
+  font-size: $font-size-small;
+  background: $navy;
+  padding: .5rem 1rem;
+  color: $white;
+  &:hover {
+    background: $actual-blue;
+  }
+  &._white {
+    background: $white;
+    color: $navy;
+    &:hover {
+      background: $yellow;
+    }
+  }
+  &._large {
+    padding: 1rem 2rem;
+    font-size: $font-size-medium;
   }
 }
 
@@ -70,11 +96,8 @@ pre {
   @include make-row();
   margin-left: 0;
   margin-right: 0;
-  .no-flexbox & {
-    display: table;
-    width: 100%;
-    border-collapse: collapse;
-    vertical-align: middle;
+  &._center {
+    align-items: center;
   }
 }
 
@@ -83,23 +106,17 @@ pre {
   &._split {
     @media (min-width: 52rem) {
       @include make-col(6);
-      .no-flexbox & {
-        display: table-cell;
-        width: 50%;
-      }
     }
   }
 }
 
 .section {
-  a {
-    color: $blue;
-    &:hover {
-      color: $navy;
-    }
-  }
   &._gray {
     background: $light-grey;
+  }
+  &._navy {
+    background: $navy;
+    color: $white;
   }
   &._padded {
     padding: 2rem 0;

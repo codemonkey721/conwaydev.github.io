@@ -2,18 +2,18 @@
   font-family: "brandon-grotesque",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
-@mixin bar( $bar-height: .25rem, $bar-width: 100%, $bar-color: $white ) {
+@mixin bar( $bar-height: 10px, $bar-width: 100%, $bar-color: $white ) {
   position: relative;
   &::after {
     content: "";
-    border-bottom: $bar-height solid rgba($bar-color, .75);
+    border-bottom: $bar-height solid rgba($bar-color, .65);
     position: absolute;
-    bottom: .5rem;
+    bottom: $bar-height;
     left: 0;
     width: $bar-width;
     transition: opacity .25s, color .25s;
     @media (min-width: 52rem) {
-      bottom: .75rem;
+      bottom: ($bar-height * 2);
     }
   }
 }

@@ -16,6 +16,9 @@
     display: block;
     background: url('/assets/me.jpg') top center no-repeat / cover;
     padding-bottom: 50%;
+    @media (min-width: 52rem) {
+      padding-bottom: 0;
+    }
   }
   &__title {
     @include bar;

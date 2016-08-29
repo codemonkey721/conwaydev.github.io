@@ -4,11 +4,11 @@ layout: default
 
 <section class="Intro section _flushed">
     <div class="row">
-        <div class="Intro--portrait column _split"></div>
+        <div class="Intro__portrait column _split"></div>
 
-        <div class="Intro--description column _split">
+        <div class="Intro__description column _split">
             <div class="wrapper">
-                <h1 class="Intro--title">Justin Conway</h1>
+                <h1 class="Intro__title">Justin Conway</h1>
 
                 <p>Justin Conway is a Chicago-based Front End Developer currently working as a Marketing Developer at <a href="//sproutsocial.com">Sprout&nbsp;Social</a> and is passionate about the web and pork.</p>
 
@@ -25,18 +25,18 @@ layout: default
         <div class="column _split">
             <div class="Posts">
                 <article class="Post">
-                    <div class="Post--date">{{ site.posts.first.date | date: "%b %-d, %Y" }}</div>
+                    <div class="Post__date">{{ site.posts.first.date | date: "%b %-d, %Y" }}</div>
 
-                    <h2 class="Post--title">
+                    <h2 class="Post__title">
                         <a href="{{ site.posts.first.url | prepend: site.baseurl }}">{{ site.posts.first.title }}</a>
                     </h2>
 
-                    <div class="Post--content">{{ site.posts.first.excerpt }}</div>
+                    <div class="Post__content">{{ site.posts.first.excerpt }}</div>
                 </article>
             </div>
         </div>
         <div class="Tweets column _split">
-            <div class="Tweets--container">
+            <div class="Tweets__container">
                 <h4>Twitter</h4>
 
                 <a class="twitter-timeline js-tweets"

@@ -1,7 +1,7 @@
 .Intro {
   background: $yellow;
   color: $black;
-  &--description {
+  &__description {
     padding: 2rem 0;
     a {
       @include bold-font;
@@ -11,21 +11,17 @@
       }
     }
   }
-  &--portrait {
+  &__portrait {
     @include image-overlay;
     display: block;
     background: url('/assets/me.jpg') top center no-repeat / cover;
-    padding-bottom: 75%;
-    @media (min-width: 52rem) {
-      padding-bottom: 50%;
-    }
+    padding-bottom: 50%;
   }
-  &--title {
+  &__title {
     @include bar;
     color: $navy;
-    margin-bottom: 2rem;
     @media (min-width: 52rem) {
-      margin-bottom: 4rem;
+      margin-bottom: 2.3rem;
     }
   }
 }

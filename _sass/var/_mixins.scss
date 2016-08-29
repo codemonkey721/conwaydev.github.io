@@ -8,16 +8,19 @@
   font-weight: 600;
 }
 
-@mixin bar( $bar-height: .75rem, $bar-width: 25%, $bar-color: $white ) {
+@mixin bar( $bar-height: .25rem, $bar-width: 100%, $bar-color: $white ) {
   position: relative;
   &::after {
     content: "";
     border-bottom: $bar-height solid rgba($bar-color, .75);
     position: absolute;
-    bottom: -$bar-height;
+    bottom: .5rem;
     left: 0;
     width: $bar-width;
     transition: opacity .25s, color .25s;
+    @media (min-width: 52rem) {
+      bottom: .75rem;
+    }
   }
 }
 

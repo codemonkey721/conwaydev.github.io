@@ -22,27 +22,29 @@
     padding-left: 1.3rem;
     color: $grey;
   }
-  &--date {
+  &__date {
     @include serif-font;
     position: relative;
     font-size: $font-size-small;
     color: $navy;
     border-top: 3px solid $blue;
     display: inline-block;
-    padding-top: .5rem;
+    padding-top: .25rem;
   }
-  &--title {
+  &__title {
     a {
       display: block;
     }
     font-size: $font-size-medium;
     margin-top: 0;
     color: $blue;
-    @media (min-width: 52rem) {
-      font-size: $font-size-large;
+    &._large {
+      @media (min-width: 52rem) {
+        font-size: $font-size-large;
+      }
     }
   }
-  &--content {
+  &__content {
     margin-top: 1.3rem;
     * + p,
     * + blockquote {

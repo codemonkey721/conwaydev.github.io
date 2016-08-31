@@ -5,6 +5,12 @@
 .Post {
   max-width: 38rem;
   margin: 0 auto;
+  a {
+    color: $actual-blue;
+    &:hover {
+      color: $navy;
+    }
+  }
   h2,
   h3,
   h4 {

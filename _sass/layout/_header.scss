@@ -25,4 +25,10 @@
       display: inline-block;
     }
   }
+  &__title-addon {
+    display: none;
+    @media (min-width: 52rem) {
+      display: inline-block;
+    }
+  }
 }

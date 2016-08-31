@@ -20,6 +20,9 @@
   }
   &__social a {
     display: inline-block;
+    .scr-text {
+      color: #FFFEFA; // For AA accessibility
+    }
     svg {
       fill: $yellow;
       display: block;

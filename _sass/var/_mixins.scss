@@ -6,7 +6,7 @@
   position: relative;
   &::after {
     content: "";
-    border-bottom: $bar-height solid rgba($bar-color, .65);
+    border-bottom: $bar-height solid rgba($bar-color, .45);
     position: absolute;
     bottom: $bar-height;
     left: 0;

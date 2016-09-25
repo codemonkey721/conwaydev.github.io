@@ -23,7 +23,7 @@
     color: $grey;
   }
   &__date {
-    @include serif-font;
+    @include bold-font;
     position: relative;
     font-size: $font-size-small;
     color: $navy;

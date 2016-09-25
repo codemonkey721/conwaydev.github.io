@@ -34,7 +34,8 @@ gulp.task('sass', function(){
             html: [
                 'index.html',
                 '_site/blog/**/*.html'
-            ]
+            ],
+            ignore: ['/html.wf-active/']
         }))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('_includes'))

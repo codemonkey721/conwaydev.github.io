@@ -4,32 +4,6 @@ $font-size-extra-large: 3.998rem;
 $font-size-large: 2.827rem;
 $font-size-medium: 1.999rem;
 
-@font-face {
-  font-family: 'Adobe Garamond Pro';
-  src: url('/assets/fonts/Adobe Garamond Pro.eot'); /* IE9 Compat Modes */
-  src: url('/assets/fonts/Adobe Garamond Pro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('/assets/fonts/Adobe Garamond Pro.woff') format('woff'), /* Modern Browsers */
-  url('/assets/fonts/Adobe Garamond Pro.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('/assets/fonts/Adobe Garamond Pro.svg#1eabc8b27c1d378ed9b1f5dd58b5095c') format('svg'); /* Legacy iOS */
-
-  font-style:   normal;
-  font-weight:  400;
-}
-
-@font-face {
-  font-family: 'GT Walsheim';
-  src: url('/assets/fonts/gt-walsheim-bold-web.eot'); /* IE9 Compat Modes */
-  src: url('/assets/fonts/gt-walsheim-bold-web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('/assets/fonts/gt-walsheim-bold-web.woff') format('woff'), /* Modern Browsers */
-  url('/assets/fonts/gt-walsheim-bold-web.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('/assets/fonts/gt-walsheim-bold-web.svg#bdf76190e7d3b4d381fd92e43e1b9dc0') format('svg'); /* Legacy iOS */
-
-  font-style:   normal;
-  font-weight:  700;
-}
-
-
-
 html {
   font-size: 1.35rem;
 

@@ -5,12 +5,12 @@
   .row {
     align-items: center;
   }
-  &--info {
+  &__info {
     background: $blue;
     padding: .5rem;
     font-size: $font-size-small;
   }
-  &--social {
+  &__social {
     display: flex;
     @media (min-width: 52rem) {
       > *:first-child {
@@ -18,7 +18,7 @@
       }
     }
   }
-  &--social a {
+  &__social a {
     display: inline-block;
     svg {
       fill: $yellow;

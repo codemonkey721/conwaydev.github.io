@@ -1,11 +1,5 @@
-@mixin serif-font() {
-  font-family: "GT Walsheim", serif;
-  font-weight: 400;
-}
-
 @mixin bold-font() {
-  @include serif-font;
-  font-weight: 600;
+  font-family: "brandon-grotesque",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 @mixin bar( $bar-height: .25rem, $bar-width: 100%, $bar-color: $white ) {

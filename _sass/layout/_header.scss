@@ -6,8 +6,8 @@
       color: $blue;
     }
   }
-  &--title {
-    @include serif-font;
+  &__title {
+    @include bold-font;
     display: block;
     font-size: $font-size-small;
     text-overflow: ellipsis;
@@ -17,35 +17,12 @@
       fill: $yellow;
     }
   }
-  &--title svg {
+  &__title svg {
     display: none;
     vertical-align: middle;
     fill: $blue;
     @media (min-width: 52rem) {
       display: inline-block;
-    }
-  }
-  &--nav {
-    display: none;
-    text-align: right;
-    @media (min-width: 52rem) {
-      display: block;
-    }
-  }
-  &--nav ul {
-    list-style: none;
-    li {
-      display: inline-block;
-    }
-    li + li {
-      margin-left: 1rem;
-    }
-    li a {
-      position: relative;
-      display: inline-block;
-      &:hover {
-        @include bar($bar-height: 3px, $bar-width: 100%, $bar-color: $blue);
-      }
     }
   }
 }

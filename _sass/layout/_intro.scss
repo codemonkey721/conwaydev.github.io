@@ -5,9 +5,9 @@
     padding: 2rem 0;
     a {
       @include bold-font;
-      color: $blue;
+      color: $navy;
       &:hover {
-        color: $navy;
+        color: $blue;
       }
     }
   }
@@ -22,6 +22,7 @@
     color: $navy;
     @media (min-width: 52rem) {
       margin-bottom: 2.3rem;
+      font-size: 4.5rem;
     }
   }
 }

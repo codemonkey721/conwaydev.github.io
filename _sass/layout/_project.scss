@@ -10,13 +10,8 @@
         }
     }
     &__title {
-        position: relative;
-        font-size: $font-size-base;
-        color: $navy;
-        border-top: 3px solid $blue;
-        display: inline-block;
-        padding-top: .5rem;
-        margin: 0;
+        font-size: $font-size-medium;
+        color: inherit;
     }
     &__description {
         font-size: $font-size-small;

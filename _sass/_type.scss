@@ -1,11 +1,11 @@
-$font-size-small: 0.707rem;
-$font-size-base: 1.5rem;
-$font-size-extra-large: 3.998rem;
-$font-size-large: 2.827rem;
-$font-size-medium: 1.999rem;
+$font-size-small: .75rem !default;
+$font-size-base: 1.125rem !default;
+$font-size-extra-large: 3.157rem !default;
+$font-size-large: 2.369rem !default;
+$font-size-medium: 1.777rem !default;
 
 html {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
 
   @media (min-width: 52rem) {
     font-size: $font-size-base;
@@ -16,44 +16,45 @@ body {
   line-height: 1.45;
 }
 
-ul,
-ol,
-figure,
 p {
-  margin-bottom: 1.3rem;
-}
-
-ul,
-ol {
-  padding-left: 1rem;
+  margin-bottom: 1.3em;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  margin: 1.414rem 0 0.5rem;
+  margin: 1.414em 0 .5em;
   font-weight: inherit;
   line-height: 1.2;
 }
 
 h1 {
   margin-top: 0;
-  font-size: $font-size-large;
+
   @media (min-width: 52rem) {
     font-size: $font-size-extra-large;
   }
 }
 
 h2 {
-  font-size: $font-size-large;
+  font-size:$font-size-large;
 }
 
 h3 {
   font-size: $font-size-medium;
 }
 
+h4 {
+  font-size: 1.333em;
+}
+
 small,
 .font_small {
   font-size: $font-size-small;
+}
+
+ul,
+ol {
+  padding-left: 1rem;
 }

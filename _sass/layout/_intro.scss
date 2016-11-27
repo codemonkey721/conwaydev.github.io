@@ -2,14 +2,7 @@
   background: $yellow;
   color: $black;
   &__description {
-    padding: 2rem 0;
-    a {
-      @include bold-font;
-      color: $navy;
-      &:hover {
-        color: $blue;
-      }
-    }
+    padding: 4rem 0;
   }
   &__portrait {
     @include image-overlay;
@@ -21,11 +14,6 @@
     }
   }
   &__title {
-    @include bar;
     color: $navy;
-    @media (min-width: 52rem) {
-      margin-bottom: 2.3rem;
-      font-size: 4.5rem;
-    }
   }
 }

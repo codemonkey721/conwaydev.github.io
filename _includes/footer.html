@@ -37,15 +37,13 @@
     </div>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 <script>
-    (function(d) {
-        var config = {
-                    kitId: 'inn4fvh',
-                    scriptTimeout: 3000,
-                    async: true
-                },
-                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
+    window.WebFont.load({
+        google: {
+            families: ['Poppins:600', 'Roboto Mono:400,400i']
+        }
+    });
     !function(){function a(){var a=document.createElement("script");a.type="text/javascript",a.src="//platform.twitter.com/widgets.js",document.head.appendChild(a)}function b(a){var b=a.getBoundingClientRect().top,c=a.getBoundingClientRect().bottom,d=b>=0&&c<=window.innerHeight;return d}function c(a,b){var c=!1;return function(){c||(a.call(),c=!0,setTimeout(function(){c=!1},b))}}function d(){b(e)&&a()}var e=document.querySelector(".js-tweets");window.innerWidth>=680&&document.addEventListener("scroll",c(d,50))}();
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

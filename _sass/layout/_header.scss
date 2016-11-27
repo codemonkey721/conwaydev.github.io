@@ -7,12 +7,8 @@
     }
   }
   &__title {
-    @include bold-font;
-    display: block;
+    display: inline-block;
     font-size: $font-size-small;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
     &:hover svg {
       fill: $yellow;
     }
@@ -21,12 +17,6 @@
     display: none;
     vertical-align: middle;
     fill: $blue;
-    @media (min-width: 52rem) {
-      display: inline-block;
-    }
-  }
-  &__title-addon {
-    display: none;
     @media (min-width: 52rem) {
       display: inline-block;
     }

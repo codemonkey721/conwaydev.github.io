@@ -82,15 +82,20 @@ layout: default
     <div class="row">
         <div class="column _split">
             <div class="Posts">
-                <article class="Post">
-                    <div class="Post__date">{{ site.posts.first.date | date: "%b %-d, %Y" }}</div>
 
-                    <h2 class="Post__title">
-                        <a href="{{ site.posts.first.url | prepend: site.baseurl }}">{{ site.posts.first.title }}</a>
-                    </h2>
+                {% for post in site.posts %}
+                    <article class="Post">
+                        <div class="Post__date">{{ post.date | date: "%b %-d, %Y" }}</div>
 
-                    <div class="Post__content">{{ site.posts.first.excerpt }}</div>
-                </article>
+                        <h2 class="Post__title">
+                            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h2>
+
+                        <div class="Post__content">{{ post.excerpt }}</div>
+                    </article>
+
+                {% endfor %}
+
             </div>
         </div>
         <div class="Tweets column _split">

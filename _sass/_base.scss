@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  font-family: 'adobe-garamond-pro', Garamond, Georgia, serif;
-  font-weight: 300;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -37,7 +37,6 @@ img {
 
 a {
   transition: all .25s;
-  text-decoration: none;
   svg {
     transition: fill .25s;
   }
@@ -119,9 +118,9 @@ pre {
     color: $white;
   }
   &._padded {
-    padding: 2rem 0;
+    padding: 1rem 0;
     @media (min-width: 52rem) {
-      padding: 4rem 0;
+      padding: 2rem 0;
     }
   }
 }

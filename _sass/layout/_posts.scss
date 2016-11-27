@@ -1,5 +1,8 @@
 .Posts {
   padding: 2rem 0;
+  .Post + .Post {
+    margin-top: 2rem;
+  }
 }
 
 .Post {

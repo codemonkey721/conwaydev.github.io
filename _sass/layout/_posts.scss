@@ -1,13 +1,14 @@
 .Posts {
-  background: $white;
   padding: 2rem 0;
+  background: $white;
   .Post + .Post {
     margin-top: 2rem;
   }
 }
 
 .Post {
-  max-width: 38rem;
+  max-width: 40rem;
+  padding: 0 1rem;
   margin: 0 auto;
   a {
     color: $actual-blue;
@@ -28,26 +29,26 @@
     margin-bottom: 1.3rem;
   }
   blockquote {
-    border-left: 3px solid $grey;
     padding-left: 1.3rem;
     color: $grey;
+    border-left: 3px solid $grey;
   }
   &__date {
     @include bold-font;
     position: relative;
+    display: inline-block;
+    padding-top: .25rem;
     font-size: $font-size-small;
     color: $navy;
     border-top: 3px solid $blue;
-    display: inline-block;
-    padding-top: .25rem;
   }
   &__title {
+    margin-top: 0;
+    font-size: $font-size-medium;
+    color: $blue;
     a {
       display: block;
     }
-    font-size: $font-size-medium;
-    margin-top: 0;
-    color: $blue;
     &._large {
       @media (min-width: 52rem) {
         font-size: $font-size-large;

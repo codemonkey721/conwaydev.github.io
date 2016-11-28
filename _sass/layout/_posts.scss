@@ -1,4 +1,5 @@
 .Posts {
+  background: $white;
   padding: 2rem 0;
   .Post + .Post {
     margin-top: 2rem;
@@ -63,9 +64,6 @@
       display: block;
       max-width: 100%;
       margin: 2.6rem auto;
-    }
-    a {
-      word-break: break-all;
     }
   }
 }

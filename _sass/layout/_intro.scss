@@ -3,6 +3,10 @@
   color: $black;
   &__description {
     padding: 4rem 0;
+    .wrapper {
+      max-width: 40rem;
+      margin-left: 0;
+    }
   }
   &__portrait {
     @include image-overlay;

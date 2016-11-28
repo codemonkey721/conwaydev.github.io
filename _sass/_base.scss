@@ -2,8 +2,8 @@
 *::before,
 *::after {
   box-sizing: inherit;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 html {
@@ -31,12 +31,13 @@ figure {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 a {
   transition: all .25s;
+  word-break: break-word;
   svg {
     transition: fill .25s;
   }
@@ -47,54 +48,50 @@ a {
 
 .button {
   @include bold-font;
-  font-size: $font-size-small;
-  background: $navy;
   padding: .5rem 1rem;
   color: $white;
+  text-decoration: none;
+  background: $navy;
   &:hover {
     background: $actual-blue;
   }
   &._white {
-    background: $white;
     color: $navy;
+    background: $white;
     &:hover {
       background: $yellow;
     }
-  }
-  &._large {
-    padding: 1rem 2rem;
-    font-size: $font-size-medium;
   }
 }
 
 pre {
   display: block;
-  background: $grey;
-  color: $yellow;
   padding: 1rem;
   overflow: auto;
+  color: $yellow;
+  background: $grey;
 }
 
 .scr-text {
-  clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
-  height: 1px;
   width: 1px;
+  height: 1px;
   overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .wrapper {
-  display: block;
   position: relative;
-  padding: 0 1rem;
+  display: block;
   max-width: 1440px;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 
 .row {
   @include make-row();
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
   &._center {
     align-items: center;
   }
@@ -113,9 +110,12 @@ pre {
   &._gray {
     background: $light-grey;
   }
+  &._dark {
+    background: $grey;
+  }
   &._navy {
-    background: $navy;
     color: $white;
+    background: $navy;
   }
   &._padded {
     padding: 1rem 0;
@@ -127,7 +127,6 @@ pre {
 
 .Tweets {
   display: none;
-  background: $grey;
   @media (min-width: 52rem) {
     display: block;
   }
@@ -143,9 +142,8 @@ pre {
     }
   }
   h3 {
+    margin-top: 0;
     font-size: $font-size-base;
     color: $yellow;
-    margin-top: 0;
   }
 }
-

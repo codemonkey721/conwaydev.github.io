@@ -24,16 +24,18 @@ layout: default
     <div class="wrapper">
         <div class="row _center">
             <div class="column _split">
-                <h2 class="Project__title _navy">Metallica</h2>
+                <h2 class="Project__title _navy">Insights</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet atque aut culpa cumque debitis dignissimos error facere, illo ipsum minus nam nemo quasi quos reiciendis sequi, sint veritatis vero.</p>
+                <p>Insights is <a href="//sproutsocial.com/insights/">Sprout Social's</a> WordPress blog where content creators are able to create thought leadership pieces on industry best practices in social media. Before I started at Sprout Social, Insights had gone through 2 different themes and had amassed a large amount of technical debt along the way. I was able to make the case for a complete retheming, from the ground up in order to increase performance as well as making it easier for new developers to get up to speed with the codebase.</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet atque aut culpa cumque debitis dignissimos error facere, illo ipsum minus nam nemo quasi quos reiciendis sequi, sint veritatis vero.</p>
+                <p>
+                    <a href="//sproutsocial.com/insights/" class="button">Visit Case Study</a>
+                </p>
             </div>
 
             <div class="column _split">
                 <figure>
-                    <img src="assets/img/metallica.png" alt="Metallica">
+                    <img src="assets/projects/insights.png" alt="Sprout Social Insights">
                 </figure>
             </div>
         </div>
@@ -50,11 +52,13 @@ layout: default
             </div>
 
             <div class="column _split">
-                <h2 class="Project__title">Toms Shoes</h2>
+                <h2 class="Project__title">Metallica</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet atque aut culpa cumque debitis dignissimos error facere, illo ipsum minus nam nemo quasi quos reiciendis sequi, sint veritatis vero.</p>
+                <p>The last project I worked on before leaving StageBloc was Metallica's website, specifically creating reusable components to be shared throughout the site. Before this project we had used a styleguide internally for the product, but never for any customer themes, this was a great opportunity to create one, especially considering how large the site is.</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet atque aut culpa cumque debitis dignissimos error facere, illo ipsum minus nam nemo quasi quos reiciendis sequi, sint veritatis vero.</p>
+                <p>
+                    <a href="//metallica.com" class="button _white">Visit Site</a>
+                </p>
             </div>
         </div>
     </div>
@@ -64,9 +68,15 @@ layout: default
     <div class="wrapper">
         <div class="row _center">
             <div class="column _split">
-                <h2 class="Project__title _navy">Sprout Social</h2>
+                <h2 class="Project__title _navy">Midopt</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet atque aut culpa cumque debitis dignissimos error facere, illo ipsum minus nam nemo quasi quos reiciendis sequi, sint veritatis vero.</p>
+                <p>
+                    As a developer who has worked at an agency I've built countless "Store Locators" using the Google Maps API, but when talking with Midopt about their needs I realized that this would be an excellent use case for integrating React with their WordPress by way of the WordPress REST API. I was fortunate enough to be able to use newer technologies to solve their needs and was able to bring some of their tech up to date.
+                </p>
+
+                <p>
+                    <a href="/" class="button">View Case Study</a>
+                </p>
             </div>
 
             <div class="column _split">
@@ -78,34 +88,41 @@ layout: default
     </div>
 </section>
 
-<section class="section">
-    <div class="row">
-        <div class="column _split">
-            <div class="Posts">
+<section class="section _dark">
+    <div class="wrapper">
+        <div class="row">
+            <div class="Posts column _split">
 
                 {% for post in site.posts %}
+
                     <article class="Post">
-                        <div class="Post__date">{{ post.date | date: "%b %-d, %Y" }}</div>
+                        <div class="Post__date">
+                            <time datetime="{{post.date}}">
+                                {{ post.date | date: "%b %-d, %Y" }}
+                            </time>
+                        </div>
 
                         <h2 class="Post__title">
-                            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                                {{ post.title }}
+                            </a>
                         </h2>
 
-                        <div class="Post__content">{{ post.excerpt }}</div>
+                        <div class="Post__content">
+                            {{ post.excerpt }}
+                        </div>
                     </article>
 
                 {% endfor %}
 
             </div>
-        </div>
-        <div class="Tweets column _split">
-            <div class="Tweets__container">
-                <h3>Twitter</h3>
-
-                <a class="twitter-timeline js-tweets"
-                   href="https://twitter.com/conwaydev"
-                   data-widget-id="351951321798168576"
-                   data-chrome="noheader nofooter noborders transparent">Tweets by @conwaydev</a>
+            <div class="Tweets column _split">
+                <div class="Tweets__container">
+                    <a class="twitter-timeline js-tweets"
+                       href="https://twitter.com/conwaydev"
+                       data-widget-id="351951321798168576"
+                       data-chrome="noheader nofooter noborders transparent">Tweets by @conwaydev</a>
+                </div>
             </div>
         </div>
     </div>

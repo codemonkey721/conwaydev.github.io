@@ -1,3 +1,3 @@
-# conwaydev.github.io
+# conwaydev.com
 
 Probably the coolest website ever.

@@ -84,10 +84,14 @@ pre {
 .column {
   @include make-col-ready(12);
   &._split {
-    margin-top: 1rem;
+    + ._split {
+      margin-top: 1rem;
+      @media (min-width: 52rem) {
+        margin-top: 0;
+      }
+    }
     @media (min-width: 52rem) {
       @include make-col(6);
-      margin-top: 0;
     }
   }
 

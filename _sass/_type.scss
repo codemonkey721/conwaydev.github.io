@@ -30,6 +30,7 @@ h4 {
 }
 
 h1 {
+  font-size: $font-size-large;
   margin-top: 0;
 
   @media (min-width: 52rem) {
@@ -38,7 +39,11 @@ h1 {
 }
 
 h2 {
-  font-size:$font-size-large;
+  font-size: $font-size-medium;
+
+  @media (min-width: 52rem) {
+    font-size: $font-size-large;
+  }
 }
 
 h3 {

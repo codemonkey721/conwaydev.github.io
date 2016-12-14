@@ -1,14 +1,18 @@
-{% include svg/symbol/svg/sprite.symbol.svg %}
+<div style="display: none;">{% include svg/symbol/svg/sprite.symbol.svg %}</div>
 
 <header class="header" role="banner">
   <div class="wrapper">
-    <a class="header__title" href="{{ site.baseurl }}/">
-      <svg class="header__logo">
-        <title>Justin Conway</title>
-        <use xlink:href="#logo"></use>
-      </svg>
+    <div class="row">
+      <div class="column">
+        <a class="header__title" href="{{ site.baseurl }}/">
+          <svg>
+            <title>Justin Conway</title>
+            <use xlink:href="#logo"></use>
+          </svg>
 
-      Justin Conway • Chicago-based Front End Developer
-    </a>
+          Justin Conway • Chicago-based Front End Developer
+        </a>
+      </div>
+    </div>
   </div>
 </header>

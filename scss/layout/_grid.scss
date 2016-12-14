@@ -1,0 +1,35 @@
+$enable-flex: true;
+
+// Core variables and mixins
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+.wrapper {
+    @include make-container();
+    max-width: 78rem;
+}
+
+.row {
+    @include make-row();
+    &--center {
+        align-items: center;
+    }
+}
+
+.column {
+    @include make-col-ready();
+
+    &--half {
+        @include make-col(6);
+    }
+
+    &--third {
+        @include make-col(4);
+    }
+
+    &--split {
+        @media (min-width: 60em) {
+            @include make-col(6);
+        }
+    }
+}

@@ -1,11 +1,5 @@
 // This is the stylesheet!
 
-$enable-flex: true;
-
-// Core variables and mixins
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-
 // Reset and dependencies
 @import "../node_modules/bootstrap/scss/normalize";
 
@@ -18,6 +12,8 @@ $enable-flex: true;
 @import "base";
 @import "layout/header";
 @import "layout/footer";
+@import "layout/grid";
+@import "layout/section";
 
 // Layouts
 

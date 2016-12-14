@@ -1,5 +1,1 @@
-import _ from 'lodash';
-
-_.times(20, ()=> {
-    console.log('hell yea');
-});
+import './src/webfont';

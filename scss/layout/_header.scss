@@ -6,6 +6,7 @@
       color: $blue;
     }
   }
+
   &__title {
     display: inline-block;
     font-size: $font-size-small;
@@ -13,12 +14,15 @@
       fill: $yellow;
     }
   }
+
   &__title svg {
     display: none;
     vertical-align: middle;
     fill: $blue;
     @media (min-width: 52rem) {
       display: inline-block;
+      width: 20px;
+      height: 20px;
     }
   }
 }

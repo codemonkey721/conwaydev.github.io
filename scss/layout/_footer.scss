@@ -2,8 +2,8 @@
   background: $navy;
   color: $white;
   padding: 1rem 0;
-  .row {
-    align-items: center;
+  p {
+    margin: 0;
   }
   &__info {
     background: $blue;
@@ -35,7 +35,7 @@
     }
     &:focus svg,
     &:hover svg {
-      fill: $navy;
+      fill: $white;
     }
   }
 }

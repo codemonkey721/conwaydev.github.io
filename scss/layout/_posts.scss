@@ -1,15 +1,15 @@
-.Posts {
+.posts {
   padding: 2rem 0;
   background: $white;
   @media (min-width: 52rem) {
     padding: 4rem 0;
   }
-  .Post + .Post {
+  .post + .post {
     margin-top: 2rem;
   }
 }
 
-.Post {
+.post {
   padding: 0 1rem;
   margin: 0 auto;
   a {

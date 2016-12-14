@@ -52,7 +52,7 @@ gulp.task('sass', () => {
         cssnano(),
     ];
 
-    return gulp.src('./scss/**/*.scss')
+    return gulp.src(cssDir)
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(gulp.dest('./_includes/css'))

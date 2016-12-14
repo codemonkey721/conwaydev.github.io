@@ -28,6 +28,10 @@ h4 {
   @include bold-font;
 }
 
+strong {
+  font-weight: 600;
+}
+
 figure {
   margin: 0;
 }

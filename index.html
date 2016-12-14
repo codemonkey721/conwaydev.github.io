@@ -48,7 +48,7 @@ layout: default
             <div class="column column--split">
                 <div class="image image--bordered">
                     <img class="b-lazy"
-                         data-src="assets/insights.jpg|assets/insights@2x.jpg"
+                         data-src="assets/img/insights.jpg|assets/img/insights@2x.jpg"
                          alt="Sprout Social Insights"
                          width="670"
                          height="375">
@@ -58,7 +58,7 @@ layout: default
                     <div class="column column--split">
                         <div class="image image--bordered">
                             <img class="b-lazy"
-                                 data-src="assets/insights2.jpg|assets/insights2@2x.jpg"
+                                 data-src="assets/img/insights2.jpg|assets/img/insights2@2x.jpg"
                                  alt="Sprout Social Insights"
                                  width="320"
                                  height="178">
@@ -68,7 +68,7 @@ layout: default
                     <div class="column column--split">
                         <div class="image image--bordered">
                             <img class="b-lazy"
-                                 data-src="assets/insights3.jpg|assets/insights3@2x.jpg"
+                                 data-src="assets/img/insights3.jpg|assets/img/insights3@2x.jpg"
                                  alt="Sprout Social Insights"
                                  width="320"
                                  height="178">
@@ -86,7 +86,7 @@ layout: default
             <div class="column column--split">
                 <div class="image image--bordered">
                     <img class="b-lazy"
-                         data-src="assets/metallica.jpg|assets/metallica@2x.jpg"
+                         data-src="assets/img/metallica.jpg|assets/img/metallica@2x.jpg"
                          alt="Metallica"
                          width="670"
                          height="375">
@@ -116,37 +116,39 @@ layout: default
 <section class="section section--padded">
     <div class="wrapper">
         <div class="row">
-            <div class="Posts column column--split">
+            <div class="column column--split">
                 <div class="wrapper">
+                    <div class="posts">
 
-                    {% for post in site.posts %}
+                        {% for post in site.posts %}
 
-                    <article class="post">
-                        <div class="post__date">
-                            <time datetime="{{post.date}}">
+                        <article class="post">
+                            <div class="post__date">
+                                <time datetime="{{post.date}}">
 
-                                {{ post.date | date: "%b %-d, %Y" }}
+                                    {{ post.date | date: "%b %-d, %Y" }}
 
-                            </time>
-                        </div>
+                                </time>
+                            </div>
 
-                        <h2 class="post__title">
-                            <a href="{{ post.url | prepend: site.baseurl }}">
+                            <h2 class="post__title">
+                                <a href="{{ post.url | prepend: site.baseurl }}">
 
-                                {{ post.title }}
+                                    {{ post.title }}
 
-                            </a>
-                        </h2>
+                                </a>
+                            </h2>
 
-                        <div class="post__content">
+                            <div class="post__content">
 
-                            {{ post.excerpt }}
+                                {{ post.excerpt }}
 
-                        </div>
-                    </article>
+                            </div>
+                        </article>
 
-                    {% endfor %}
+                        {% endfor %}
 
+                    </div>
                 </div>
             </div>
             <div class="column column--split">
@@ -154,7 +156,8 @@ layout: default
                     <a class="twitter-timeline js-tweets"
                        href="https://twitter.com/conwaydev"
                        data-widget-id="351951321798168576"
-                       data-chrome="noheader nofooter noborders transparent">
+                       data-chrome="noheader nofooter noborders transparent"
+                       style="width: 100%;">
                         Tweets by @conwaydev
                     </a>
                 </div>

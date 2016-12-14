@@ -13,7 +13,7 @@ const browserSync = require('browser-sync').create();
 
 const cssDir = './scss/**/*.scss';
 
-gulp.task('jekyll', () => {
+gulp.task('jekyll', ['sass'], () => {
     const jekyll = child.spawn('jekyll', ['build']);
 
     const jekyllLogger = (buffer) => {
@@ -67,9 +67,7 @@ gulp.task('serve', ['sass'], () => {
             baseDir: '_site'
         }
     });
-
-    gulp.watch(cssDir, ['sass']);
-    gulp.watch("./**/*.html").on('change', ['jekyll', browserSync.reload]);
+    gulp.watch('./**/*.html').on('change', ['jekyll']);
 });
 
 gulp.task('default', ['svg', 'sass', 'jekyll', 'serve']);

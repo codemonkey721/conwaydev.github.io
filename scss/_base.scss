@@ -20,8 +20,7 @@ body {
 h1,
 h2,
 h3,
-h4,
-strong {
+h4 {
   @include bold-font;
 }
 
@@ -78,29 +77,6 @@ pre {
   margin-left: 0;
   &._center {
     align-items: center;
-  }
-}
-
-.column {
-  @include make-col-ready(12);
-  &._split {
-    + ._split {
-      margin-top: 1rem;
-      @media (min-width: 52rem) {
-        margin-top: 0;
-      }
-    }
-    @media (min-width: 52rem) {
-      @include make-col(6);
-    }
-  }
-
-  > .row {
-    margin-left: -15px;
-    margin-right: -15px;
-    @media (min-width: 52rem) {
-      margin-top: 1rem;
-    }
   }
 }
 

@@ -11,15 +11,4 @@ github_username:  conwaydev
 # Build settings
 markdown: kramdown
 
-exclude: ["node_modules", "gulpfile.js", "package.json"]
-
-collections:
-  projects:
-    output: true
-
-defaults:
-  -
-    scope:
-      type: "projects"
-    values:
-      layout: "projects"
+exclude: ["node_modules", "gulpfile.babel.js", "package.json"]

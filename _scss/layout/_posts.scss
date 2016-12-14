@@ -1,17 +1,9 @@
-.posts {
-  padding: 2rem 0;
-  background: $white;
-  @media (min-width: 52rem) {
-    padding: 4rem 0;
-  }
-  .post + .post {
-    margin-top: 2rem;
-  }
-}
-
 .post {
   padding: 0 1rem;
   margin: 0 auto;
+  + .post {
+    margin-top: 2rem;
+  }
   a {
     color: $actual-blue;
     &:hover {

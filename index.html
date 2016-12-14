@@ -4,9 +4,23 @@ layout: default
 
 <section class="intro section">
     <div class="wrapper">
-        <div class="row">
+        <div class="row row--center">
             <div class="column column--split">
-                <div class="intro__portrait"></div>
+                <div class="clip-triangles">
+                    <div class="clip-triangles-image"></div>
+                </div>
+
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="triangles01_clip" clipPathUnits="objectBoundingBox">
+                            <polygon points="0.392,0.000 0.214,0.297 0.570,0.297"/>
+                            <polygon points="0.821,0.010 0.643,0.298 0.999,0.298"/>
+                            <polygon points="0.178,0.326 0.000,0.623 0.357,0.623"/>
+                            <polygon points="0.393,0.623 0.571,0.326 0.215,0.326"/>
+                            <polygon points="0.607,0.326 0.429,0.623 0.785,0.623"/>
+                        </clipPath>
+                    </defs>
+                </svg>
             </div>
 
             <div class="column column--split">
@@ -46,32 +60,30 @@ layout: default
             </div>
 
             <div class="column column--split">
-                <div class="image image--bordered">
-                    <img class="b-lazy"
-                         data-src="assets/img/insights.jpg|assets/img/insights@2x.jpg"
-                         alt="Sprout Social Insights"
-                         width="670"
-                         height="375">
+                <div class="row">
+                    <div class="column">
+                        <div class="image image--bordered">
+                            <img class="b-lazy"
+                                 data-src="assets/img/insights.jpg|assets/img/insights@2x.jpg"
+                                 alt="Sprout Social Insights">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="column column--split">
+                    <div class="column column--half">
                         <div class="image image--bordered">
                             <img class="b-lazy"
                                  data-src="assets/img/insights2.jpg|assets/img/insights2@2x.jpg"
-                                 alt="Sprout Social Insights"
-                                 width="320"
-                                 height="178">
+                                 alt="Sprout Social Insights">
                         </div>
                     </div>
 
-                    <div class="column column--split">
+                    <div class="column column--half">
                         <div class="image image--bordered">
                             <img class="b-lazy"
                                  data-src="assets/img/insights3.jpg|assets/img/insights3@2x.jpg"
-                                 alt="Sprout Social Insights"
-                                 width="320"
-                                 height="178">
+                                 alt="Sprout Social Insights">
                         </div>
                     </div>
                 </div>

@@ -47,6 +47,7 @@ img {
 .image {
   &--bordered {
     border-radius: 3px;
+    border: 1px solid $white;
   }
 }
 
@@ -81,4 +82,30 @@ pre {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   color: inherit;
+}
+
+.twitter-timeline {
+  width: 100% !important;
+}
+
+.button {
+  @include bold-font;
+
+  color: $white;
+  text-decoration: none;
+  background: $actual-blue;
+  padding: .5rem 1rem;
+
+  &:hover {
+    background: $navy;
+  }
+
+  &--white {
+    color: $navy;
+    background: $white;
+
+    &:hover {
+      background: $yellow;
+    }
+  }
 }

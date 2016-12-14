@@ -2,30 +2,29 @@
   background: $yellow;
   color: $black;
 
-  &__description {
-    .wrapper {
-      max-width: 52rem;
-      margin-left: 0;
-    }
+  .clip-triangles {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.1%;
+    filter: drop-shadow(0 0 .5rem rgba(0, 0, 0, 0.5));
+    position: relative;
 
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    @media (min-width: 52rem) {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+    &-image {
+      position: absolute;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      clip-path: url(#triangles01_clip);
+      background-image: url(assets/img/me.jpg);
+      background-size: cover;
+      background-position: top center;
     }
   }
 
-  &__portrait {
-    @include image-overlay;
 
-    display: block;
-    padding-bottom: 50%;
-
-    @media (min-width: 52rem) {
-      padding-bottom: 0;
-    }
+  &__description {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
   }
 
   &__title {

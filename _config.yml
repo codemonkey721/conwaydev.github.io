@@ -11,4 +11,4 @@ github_username:  conwaydev
 # Build settings
 markdown: kramdown
 
-exclude: ["node_modules", "gulpfile.babel.js", "package.json"]
+exclude: ["README.md", "node_modules", "gulpfile.babel.js", "package.json","webpack.config.js", "webpack.production.config.js", "s3_website.yml", "assets/svg"]

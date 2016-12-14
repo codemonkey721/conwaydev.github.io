@@ -3,7 +3,7 @@ var path = require('path');
 
 module.exports = {
 	entry: {
-		bundle: './scripts/modules/index.js',
+		bundle: './_scripts/modules/index.js',
 	},
 	output: {
 		filename: './_includes/js/script.js'

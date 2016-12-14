@@ -11,7 +11,7 @@ import svgSprite from 'gulp-svg-sprite';
 
 const browserSync = require('browser-sync').create();
 
-const cssDir = './scss/**/*.scss';
+const cssDir = './_scss/**/*.scss';
 
 gulp.task('jekyll', ['sass'], () => {
     const jekyll = child.spawn('jekyll', ['build']);

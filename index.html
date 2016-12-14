@@ -5,35 +5,17 @@ layout: default
 <section class="intro section">
     <div class="wrapper">
         <div class="row row--center">
-            <div class="column column--split">
-                <div class="clip-triangles">
-                    <div class="clip-triangles-image"></div>
-                </div>
-
-                <svg width="0" height="0">
-                    <defs>
-                        <clipPath id="triangles01_clip" clipPathUnits="objectBoundingBox">
-                            <polygon points="0.392,0.000 0.214,0.297 0.570,0.297"/>
-                            <polygon points="0.821,0.010 0.643,0.298 0.999,0.298"/>
-                            <polygon points="0.178,0.326 0.000,0.623 0.357,0.623"/>
-                            <polygon points="0.393,0.623 0.571,0.326 0.215,0.326"/>
-                            <polygon points="0.607,0.326 0.429,0.623 0.785,0.623"/>
-                        </clipPath>
-                    </defs>
-                </svg>
-            </div>
+            <div class="column column--split" style="background: url(assets/img/me.jpg) no-repeat center / cover; padding-bottom: 45%;"></div>
 
             <div class="column column--split">
                 <div class="intro__description">
-                    <div class="wrapper">
-                        <h1 class="intro__title">Justin Conway</h1>
+                    <h1 class="intro__title">Justin Conway</h1>
 
-                        <p>Justin Conway is a Chicago-based Front End Developer currently working as a Marketing Developer at <a href="//sproutsocial.com">Sprout&nbsp;Social</a> and is passionate about the web and pork.</p>
+                    <p>Justin Conway is a Chicago-based Front End Developer currently working as a Marketing Developer at <a href="//sproutsocial.com">Sprout&nbsp;Social</a> and is passionate about the web and pork.</p>
 
-                        <p>He has more than seven years of experience solving problems with web technologies. He is always interested in finding new ways to develop challenging and innovative web products.</p>
+                    <p>He has more than seven years of experience solving problems with web technologies. He is always interested in finding new ways to develop challenging and innovative web products.</p>
 
-                        <p>When he’s not developing or learning, Justin is known to post photos of his cat to Instagram or be seen enjoying a nice glass of bourbon.</p>
-                    </div>
+                    <p>When he’s not developing or learning, Justin is known to post photos of his cat to Instagram or be seen enjoying a nice glass of bourbon.</p>
                 </div>
             </div>
         </div>
@@ -129,38 +111,36 @@ layout: default
     <div class="wrapper">
         <div class="row">
             <div class="column column--split">
-                <div class="wrapper">
-                    <div class="posts">
+                <div class="posts">
 
-                        {% for post in site.posts %}
+                    {% for post in site.posts %}
 
-                        <article class="post">
-                            <div class="post__date">
-                                <time datetime="{{post.date}}">
+                    <article class="post">
+                        <div class="post__date">
+                            <time datetime="{{post.date}}">
 
-                                    {{ post.date | date: "%b %-d, %Y" }}
+                                {{ post.date | date: "%b %-d, %Y" }}
 
-                                </time>
-                            </div>
+                            </time>
+                        </div>
 
-                            <h2 class="post__title">
-                                <a href="{{ post.url | prepend: site.baseurl }}">
+                        <h2 class="post__title">
+                            <a href="{{ post.url | prepend: site.baseurl }}">
 
-                                    {{ post.title }}
+                                {{ post.title }}
 
-                                </a>
-                            </h2>
+                            </a>
+                        </h2>
 
-                            <div class="post__content">
+                        <div class="post__content">
 
-                                {{ post.excerpt }}
+                            {{ post.excerpt }}
 
-                            </div>
-                        </article>
+                        </div>
+                    </article>
 
-                        {% endfor %}
+                    {% endfor %}
 
-                    </div>
                 </div>
             </div>
             <div class="column column--split">

@@ -31,6 +31,7 @@
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-1": "^6.16.0",
+    "blazy": "^1.8.2",
     "bootstrap": "^4.0.0-alpha.5",
     "browser-sync": "^2.18.5",
     "cssnano": "^3.9.1",
@@ -43,8 +44,5 @@
     "webfontloader": "^1.6.27",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
-  },
-  "dependencies": {
-    "blazy": "^1.8.2"
   }
 }

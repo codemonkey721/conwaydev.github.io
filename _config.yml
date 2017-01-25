@@ -1,14 +1,29 @@
-# Site settings
+---
 title: Justin Conway Chicago-based Front End Developer
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: justin@conwaydev.com
-description: > # this means to ignore newlines until "baseurl:"
-  Justin Conway is a Chicago-based Front End Developer passionate about the web and pork.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://conwaydev.com" # the base hostname & protocol for your site
+description: 'Justin Conway is a Chicago-based Front End Developer passionate about
+  the web and pork.
+
+'
+baseurl: ''
+url: http://conwaydev.com
 twitter_username: conwaydev
-github_username:  conwaydev
-
-# Build settings
+github_username: conwaydev
 markdown: kramdown
-
-exclude: ["README.md", "node_modules", "gulpfile.babel.js", "package.json","webpack.config.js", "webpack.production.config.js", "s3_website.yml", "assets/svg"]
+exclude:
+- README.md
+- node_modules
+- gulpfile.babel.js
+- package.json
+- webpack.config.js
+- webpack.production.config.js
+- s3_website.yml
+- assets/svg

@@ -1,8 +1,9 @@
 ---
+title: Using Gulp in a Jekyll Project
+date: 2016-05-21 03:50:24 Z
+categories:
+- blog
 layout: post
-title:  "Using Gulp in a Jekyll Project"
-date:   2016-05-20 21:50:24 -0600
-categories: blog
 ---
 
 Even though I’m trying not to rely on JS build systems as much anymore and rather use plain npm scripts, I have to say I still love them. They absolutely changed my life when I started using them. Today I'm going to talk about using Gulp inside of Jekyll. Now Jekyll has a really useful server inside itself, but I prefer being able to control a little more and gulp gives me that ability.

@@ -1,8 +1,9 @@
 ---
+title: 2 Awesome Uses for Screaming Frog
+date: 2016-08-23 21:50:24 Z
+categories:
+- blog
 layout: post
-title:  "2 Awesome Uses for Screaming Frog"
-date:   2016-08-23 15:50:24 -0600
-categories: blog
 ---
 
 Recently I've had to learn a _lot_ about SEO in a very short amount of time. I would say the biggest "gotcha" moment I've had is finding out about and using the [Screaming Frog SEO Spider](https://www.screamingfrog.co.uk/seo-spider/).

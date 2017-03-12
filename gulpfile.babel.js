@@ -64,7 +64,7 @@ gulp.task('svg', () => {
 });
 
 gulp.task('webpack', () => {
-	const webpack = child.exec('webpack --config webpack.production.config.js -p');
+	const webpack = child.exec('webpack');
 
 	const webpackLogger = (buffer) => {
 		buffer.toString()
@@ -89,4 +89,4 @@ gulp.task('serve', () => {
 	gulp.watch('./scripts/**/*.js', ['webpack']);
 });
 
-gulp.task('default', ['svg', 'scss', 'jekyll', 'serve']);
+gulp.task('default', ['svg', 'scss']);

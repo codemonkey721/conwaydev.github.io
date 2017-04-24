@@ -4,7 +4,9 @@
   "description": "Pretty much the best website ever",
   "main": "index.js",
   "scripts": {
-    "build": "webpack && gulp"
+    "build": "webpack && gulp",
+    "predeploy": "yarn run build && jekyll build",
+    "deploy": "gh-pages -d _site"
   },
   "repository": {
     "type": "git",
@@ -44,5 +46,9 @@
     "webfontloader": "^1.6.27",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.4.0",
+    "gh-pages": "^0.12.0"
   }
 }

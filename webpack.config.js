@@ -6,15 +6,15 @@ const config = {
         index: './_scripts/modules/index.js'
     },
     output: {
-        path: path.resolve(__dirname, './_includes/js'),
+        path: path.resolve(__dirname, './js'),
         filename: '[name].min.js'
     },
     module: {
         loaders: [
             {
                 test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
-                loader: 'babel-loader?presets[]=es2015'
+                exclude: /(node_modules)/,
+                loader: 'babel-loader'
             }
         ]
     }

@@ -1,16 +1,10 @@
-import {throttle} from 'lodash';
-
 function isScrolledIntoView(el) {
-    const elemTop = el.getBoundingClientRect().top;
-    const elemBottom = el.getBoundingClientRect().bottom;
-
-    return (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    return (el.getBoundingClientRect().top >= 0) && (el.getBoundingClientRect().bottom <= window.innerHeight);
 }
 
 function appendTwitterScript() {
     const script = document.createElement('script');
     script.src = '//platform.twitter.com/widgets.js';
-
     document.head.appendChild(script);
 }
 
@@ -21,5 +15,5 @@ function showTwitterFeed() {
 }
 
 if (window.innerWidth >= 640) {
-    window.addEventListener('scroll', throttle(showTwitterFeed, 1000));
+    window.addEventListener('scroll', showTwitterFeed);
 }

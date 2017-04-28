@@ -1,15 +1,90 @@
 ---
+layout: compress
 ---
 
 <!doctype html>
 <html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <style>{% include css/main.css %}</style>
+</head>
 <body>
 
-{% include header.html %}
+<div style="display: none;">{% include svg/symbol/svg/sprite.symbol.svg %}</div>
+
+<header class="header" role="banner">
+    <div class="wrapper">
+        <div class="row">
+            <div class="column">
+                <a class="header__title" href="{{ site.baseurl }}/">
+                    <svg>
+                        <title>Justin Conway</title>
+                        <use xlink:href="#logo"></use>
+                    </svg>
+
+                    Justin Conway • Chicago-based Front End Developer
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
 
 {{ content }}
 
-{% include footer.html %}
+<footer class="footer" role="contentinfo">
+    <div class="wrapper">
+        <div class="footer__info">
+            <div class="row row--center">
+                <div class="column column--split">
+                    <p class="footer__copy">
+                        &copy; {{ site.time | date: '%Y' }} Justin Conway
+                    </p>
+                </div>
 
+                <div class="column column--split">
+                    <div class="footer__social">
+                        <a href="https://twitter.com/conwaydev" title="Twitter">
+                            <svg>
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a href="https://github.com/conwaydev/" title="GitHub">
+                            <svg>
+                                <use xlink:href="#github"></use>
+                            </svg>
+                        </a>
+
+                        <a href="http://codepen.io/conwaydev/" title="CodePen">
+                            <svg>
+                                <use xlink:href="#codepen"></use>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/justin-conway-a2260a94" title="LinkedIn">
+                            <svg>
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+                        <a href="mailto:justin@conwaydev.com" title="Email">
+                            <svg>
+                                <use xlink:href="#message"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script async src="{{ "/js/index.min.js" | prepend: site.baseurl }}"></script>
 </body>
 </html>

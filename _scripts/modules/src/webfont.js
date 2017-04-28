@@ -1,5 +1,5 @@
 import WebFont from 'webfontloader';
-import { ready } from 'util';
+import { ready } from './util';
 
 ready(()=> {
     WebFont.load({

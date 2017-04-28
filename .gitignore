@@ -3,7 +3,4 @@ _site
 .jekyll-metadata
 node_modules
 dist
-_includes/css
-_includes/js
-_includes/svg
 npm-debug.log

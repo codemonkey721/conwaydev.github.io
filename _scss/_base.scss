@@ -85,7 +85,11 @@ pre {
 }
 
 .twitter-timeline {
+  display: none;
   width: 100% !important;
+  @media (min-width: 52rem) {
+    display: block;
+  }
 }
 
 .button {

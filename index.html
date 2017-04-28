@@ -111,31 +111,45 @@ layout: default
             <div class="column column--split">
                 <div class="posts">
 
-                    {% for post in site.posts %}
+                    {% for post in site.posts limit:1 %}
 
-                    <article class="post">
-                        <div class="post__date">
-                            <time datetime="{{post.date}}">
+                        <article class="post">
+                            <div class="post__date">
+                                <time datetime="{{post.date}}">
+                                    {{ post.date | date: "%b %-d, %Y" }}
+                                </time>
+                            </div>
 
-                                {{ post.date | date: "%b %-d, %Y" }}
+                            <h2 class="post__title">
+                                <a href="{{ post.url | prepend: site.baseurl }}">
+                                    {{ post.title }}
+                                </a>
+                            </h2>
 
-                            </time>
-                        </div>
+                            <div class="post__content">
+                                {{ post.excerpt }}
+                            </div>
 
-                        <h2 class="post__title">
-                            <a href="{{ post.url | prepend: site.baseurl }}">
+                            <p><a href="{{ post.url | prepend: site.baseurl }}">Read more about {{ post.title }}</a></p>
+                        </article>
 
+                    {% endfor %}
+
+                    <p><strong>Older posts:</strong></p>
+
+                    {% for post in site.posts offset:1 limit:2 %}
+
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            <h2 class="post__title">
                                 {{ post.title }}
+                            </h2>
 
-                            </a>
-                        </h2>
-
-                        <div class="post__content">
-
-                            {{ post.excerpt }}
-
-                        </div>
-                    </article>
+                            <div>
+                                <time datetime="{{post.date}}">
+                                    {{ post.date | date: "%b %-d, %Y" }}
+                                </time>
+                            </div>
+                        </a>
 
                     {% endfor %}
 

@@ -1,7 +1,10 @@
-.post {
-  + .post {
+.posts > a {
+  display: block;
+  + a {
     margin-top: 2rem;
   }
+}
+.post {
   a {
     color: $actual-blue;
     &:hover {
@@ -33,15 +36,17 @@
     font-size: $font-size-small;
     color: $navy;
     border-top: 3px solid $blue;
+    margin-bottom: 1rem;
   }
   &__title {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: $font-size-medium;
     color: $blue;
     a {
       display: block;
     }
-    &._large {
+    &--large {
       @media (min-width: 52rem) {
         font-size: $font-size-large;
       }

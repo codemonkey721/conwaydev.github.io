@@ -4,6 +4,7 @@ date: 2017-04-26 21:50:24 Z
 categories:
 - blog
 layout: post
+description: A dive into tooling around web page performance to allow developers to create better web experiences.
 ---
 
 Its hard to find web developers in 2017 who don't factor in performance into their day to day work. Stakeholders are realizing that web performance is essential to their business and conversions, and developers are realizing that not everyone in the world is accessing websites from a brand new MacBook Pro with blazing fast internet speeds. As a developer I may go a bit overboard, some may even call it an obsession, but web performance is something I'm incredibly passionate about. It all ties back in to the inclusion of the web, and providing the best possible experience for every person to access your site or product.

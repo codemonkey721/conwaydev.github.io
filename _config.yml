@@ -26,3 +26,5 @@ exclude:
 - assets/svg
 - yarn.lock
 - CNAME
+gems:
+  - jekyll-sitemap

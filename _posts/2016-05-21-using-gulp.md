@@ -4,6 +4,7 @@ date: 2016-05-21 03:50:24 Z
 categories:
 - blog
 layout: post
+description: A brief look at using Gulp inside of a Jekyll project to manage your asset building.
 ---
 
 Even though I’m trying not to rely on JS build systems as much anymore and rather use plain npm scripts, I have to say I still love them. They absolutely changed my life when I started using them. Today I'm going to talk about using Gulp inside of Jekyll. Now Jekyll has a really useful server inside itself, but I prefer being able to control a little more and gulp gives me that ability.

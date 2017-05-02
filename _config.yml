@@ -11,7 +11,7 @@ collections:
 email: justin@conwaydev.com
 description: 'Justin Conway is a Chicago-based Front End Developer passionate about the web and pork.'
 baseurl: ''
-url: http://conwaydev.com
+url: https://conwaydev.com
 twitter_username: conwaydev
 github_username: conwaydev
 markdown: kramdown

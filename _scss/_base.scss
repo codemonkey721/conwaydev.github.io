@@ -11,13 +11,13 @@ html {
 }
 
 body {
-  font-family: monospace;
+  font-family: "Andale Mono", "PT Mono", monospace;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   html.wf-active & {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto Mono", "Andale Mono", "PT Mono", monospace;
   }
 }
 

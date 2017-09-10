@@ -8,7 +8,10 @@
 
 html {
   box-sizing: border-box;
-  font-size: 18px;
+
+  @media (min-width: 60em) {
+    font-size: 18px;
+  }
 }
 
 body {

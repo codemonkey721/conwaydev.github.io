@@ -3,13 +3,13 @@
 const child = require('child_process');
 const browserSync = require('browser-sync').create();
 
-import gulp from 'gulp';
-import gutil from 'gulp-util';
-import sass from 'gulp-sass';
-import postcss from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
-import cssnano from 'cssnano';
-import svgSprite from 'gulp-svg-sprite';
+const gulp = require('gulp');
+const gutil = require('gulp-util');
+const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const svgSprite = require('gulp-svg-sprite');
 
 const siteRoot = '_site';
 const cssFiles = '_scss/**/*.scss';

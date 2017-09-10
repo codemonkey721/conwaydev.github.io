@@ -1,7 +1,6 @@
 // This is the stylesheet!
 
-// Reset and dependencies
-@import "../node_modules/bootstrap/scss/normalize";
+@import "./../node_modules/bootstrap/scss/bootstrap-reboot";
 
 @import "type";
 @import "var/mixins";

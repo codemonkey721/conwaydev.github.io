@@ -10,11 +10,15 @@ const config = {
         filename: '[name].min.js'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
+                use: [
+                    {
+                        loader: 'babel-loader'
+                    }
+                ],
                 exclude: /(node_modules)/,
-                loader: 'babel-loader'
             }
         ]
     }

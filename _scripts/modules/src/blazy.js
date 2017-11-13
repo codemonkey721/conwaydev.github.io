@@ -1,3 +1,6 @@
 import Blazy from 'blazy';
+import { ready } from './util';
 
-new Blazy();
+ready(() => {
+    new Blazy();
+});

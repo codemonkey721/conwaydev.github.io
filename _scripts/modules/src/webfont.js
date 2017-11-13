@@ -1,13 +1,10 @@
 import WebFont from 'webfontloader';
-import { ready } from './util';
+import {ready} from './util';
 
-ready(()=> {
+ready(() => {
     WebFont.load({
         google: {
-            families: [
-                'Poppins:600',
-                'Roboto Mono:400,700'
-            ]
+            families: ['Poppins:600', 'Roboto Mono:400,700']
         }
     });
 });

@@ -1,5 +1,7 @@
+import {ready, throttle} from './util';
+
 function isScrolledIntoView(el) {
-    return (el.getBoundingClientRect().top >= 0) && (el.getBoundingClientRect().bottom <= window.innerHeight);
+    return el.getBoundingClientRect().top >= 0 && el.getBoundingClientRect().bottom <= window.innerHeight;
 }
 
 function appendTwitterScript() {
@@ -8,12 +10,28 @@ function appendTwitterScript() {
     document.head.appendChild(script);
 }
 
-function showTwitterFeed() {
-    if (document.querySelector('.js-tweets') && isScrolledIntoView(document.querySelector('.js-tweets'))) {
-        appendTwitterScript();
-    }
-}
+ready(() => {
+    if (!('IntersectionObserver' in window)) {
+        const tweets = document.querySelector('.js-tweets');
 
-if (window.innerWidth >= 640) {
-    window.addEventListener('scroll', showTwitterFeed);
-}
+        window.addEventListener(
+            'scroll',
+            throttle(() => {
+                if (tweets && isScrolledIntoView(tweets)) {
+                    appendTwitterScript();
+                }
+            }, 250)
+        );
+    } else {
+        const observer = new IntersectionObserver(
+            () => {
+                appendTwitterScript();
+            },
+            {
+                threshold: 0.5
+            }
+        );
+
+        observer.observe(document.querySelector('.js-tweets'));
+    }
+});

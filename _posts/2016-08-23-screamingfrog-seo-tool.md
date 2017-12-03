@@ -4,7 +4,8 @@ date: 2016-08-23 21:50:24 Z
 categories:
 - blog
 layout: post
-description: Introduction to the Screaming Frog SEO software as well as some interesting use cases for it.
+description: Introduction to the Screaming Frog SEO software as well as some interesting
+  use cases for it.
 ---
 
 Recently I've had to learn a _lot_ about SEO in a very short amount of time. I would say the biggest "gotcha" moment I've had is finding out about and using the [Screaming Frog SEO Spider](https://www.screamingfrog.co.uk/seo-spider/).

@@ -107,6 +107,7 @@ pre {
   padding: .5rem 1rem;
 
   &:hover {
+    color: $white;
     background: $navy;
   }
 
@@ -115,6 +116,7 @@ pre {
     background: $white;
 
     &:hover {
+      color: $navy;
       background: $yellow;
     }
   }

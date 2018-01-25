@@ -27,4 +27,12 @@ $enable-flex: true;
             @include make-col(6);
         }
     }
+    &--reverse {
+        @media (min-width: 60em) {
+            order: 1;
+            + .column {
+                order: 0;
+            }
+        }
+    }
 }

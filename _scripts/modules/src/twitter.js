@@ -11,17 +11,19 @@ function appendTwitterScript() {
 }
 
 ready(() => {
-    if (!('IntersectionObserver' in window)) {
-        const tweets = document.querySelector('.js-tweets');
+    const tweets = document.querySelector('.js-tweets');
 
-        window.addEventListener(
-            'scroll',
-            throttle(() => {
-                if (tweets && isScrolledIntoView(tweets)) {
-                    appendTwitterScript();
-                }
-            }, 250)
-        );
+    if (!('IntersectionObserver' in window)) {
+        if (tweets) {
+            window.addEventListener(
+                'scroll',
+                throttle(() => {
+                    if (tweets && isScrolledIntoView(tweets)) {
+                        appendTwitterScript();
+                    }
+                }, 250)
+            );
+        }
     } else {
         const observer = new IntersectionObserver(
             () => {
@@ -32,6 +34,8 @@ ready(() => {
             }
         );
 
-        observer.observe(document.querySelector('.js-tweets'));
+        if (tweets) {
+            observer.observe(tweets);
+        }
     }
 });

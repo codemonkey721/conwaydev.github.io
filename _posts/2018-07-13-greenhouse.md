@@ -7,7 +7,7 @@ layout: post
 description: An introduction to what I feel is the best hiring software that I’ve used so far.
 ---
 
-<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dha4w82d62smt.cloudfront.net/items/2A0q1K0E2o0z1g1x2W1g/Screen%20Shot%202018-07-14%20at%2012.02.08%20AM.png" alt="Greenhouse.io" />
+<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dha4w82d62smt.cloudfront.net/items/2r2D40241m1s1b3M3m3y/greenhouse.jpg" alt="Greenhouse.io" />
 
 > Greenhouse is an applicant tracking system and recruiting software designed to optimize your entire recruiting process. Find better candidates, conduct more focused interviews, and make data-driven hiring decisions.
 
@@ -17,7 +17,7 @@ Sometimes I think that hiring software is a super saturated market. I see compan
 
 As a developer working with any third party service you’ll know that not all services keep an up to date docs, if they even have docs at all. Greenhouse are utilizing a generator called [Slate](https://github.com/lord/slate) that just looks fantastic and above all helps me find exactly what I’m looking for. You can find Greenhouse’s docs [here](https://developers.greenhouse.io/job-board.html).
 
-<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dha4w82d62smt.cloudfront.net/items/2b1k20270v0l2I1F112h/Screen%20Shot%202018-07-14%20at%2012.01.43%20AM.png" alt="Greenhouse.io API docs" />
+<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dha4w82d62smt.cloudfront.net/items/0E2w2S3q1u1x2s3M1Y3o/API.jpg" alt="Greenhouse.io API docs" />
 
 ## 2. You can just use their Job Board API anywhere
 

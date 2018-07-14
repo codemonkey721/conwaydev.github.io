@@ -63,19 +63,6 @@ gulp.task('svg', () => {
 		.pipe(gulp.dest('./_includes/svg'));
 });
 
-gulp.task('webpack', () => {
-	const webpack = child.exec('webpack');
-
-	const webpackLogger = (buffer) => {
-		buffer.toString()
-			.split(/\n/)
-			.forEach((message) => gutil.log('Webpack: ' + message));
-	};
-
-	webpack.stdout.on('data', webpackLogger);
-	webpack.stderr.on('data', webpackLogger);
-});
-
 gulp.task('serve', () => {
 	browserSync.init({
 		files: [siteRoot + '/**'],
@@ -86,7 +73,6 @@ gulp.task('serve', () => {
 	});
 
 	gulp.watch('./_scss/**/*.scss', ['scss']);
-	gulp.watch('./scripts/**/*.js', ['webpack']);
 });
 
 gulp.task('default', ['svg', 'scss']);

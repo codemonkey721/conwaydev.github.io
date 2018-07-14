@@ -13,8 +13,8 @@ function appendTwitterScript() {
 ready(() => {
     const tweets = document.querySelector('.js-tweets');
 
-    if (!('IntersectionObserver' in window)) {
-        if (tweets) {
+    if (tweets) {
+        if (!('IntersectionObserver' in window)) {
             window.addEventListener(
                 'scroll',
                 throttle(() => {
@@ -23,19 +23,19 @@ ready(() => {
                     }
                 }, 250)
             );
-        }
-    } else {
-        const observer = new IntersectionObserver(
-            () => {
-                appendTwitterScript();
-            },
-            {
-                threshold: 0.5
-            }
-        );
+        } else {
+            const observer = new IntersectionObserver(
+                () => {
+                    appendTwitterScript();
+                },
+                {
+                    threshold: 0.5
+                }
+            );
 
-        if (tweets) {
-            observer.observe(tweets);
+            if (tweets) {
+                observer.observe(tweets);
+            }
         }
     }
 });

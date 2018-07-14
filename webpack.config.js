@@ -1,7 +1,8 @@
-const webpack = require('webpack'); //to access built-in plugins
+const webpack = require('webpack');
 const path = require('path');
 
 const config = {
+    mode: 'production',
     entry: {
         index: './_scripts/modules/index.js'
     },
@@ -21,11 +22,7 @@ const config = {
                 exclude: /(node_modules)/,
             }
         ]
-    }
-    ,
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin()
-    ]
+    },
 };
 
 module.exports = config;

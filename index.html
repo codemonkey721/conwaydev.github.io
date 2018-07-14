@@ -47,10 +47,12 @@ layout: default
                             </h2>
 
                             <div class="post__content">
-                                {{ post.excerpt }}
+                                {% if post.description %}
+                                    <p>{{ post.description }}</p>
+                                {% else %}
+                                    {{ post.excerpt }}
+                                {% endif %}
                             </div>
-
-                            <p><a href="{{ post.url | prepend: site.baseurl }}">Read more about {{ post.title }}</a></p>
                         </article>
 
                     {% endfor %}

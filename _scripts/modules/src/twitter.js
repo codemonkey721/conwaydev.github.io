@@ -1,8 +1,4 @@
-import {ready, throttle} from './util';
-
-function isScrolledIntoView(el) {
-    return el.getBoundingClientRect().top >= 0 && el.getBoundingClientRect().bottom <= window.innerHeight;
-}
+import {ready} from './util';
 
 function appendTwitterScript() {
     const script = document.createElement('script');
@@ -14,16 +10,7 @@ ready(() => {
     const tweets = document.querySelector('.js-tweets');
 
     if (tweets) {
-        if (!('IntersectionObserver' in window)) {
-            window.addEventListener(
-                'scroll',
-                throttle(() => {
-                    if (tweets && isScrolledIntoView(tweets)) {
-                        appendTwitterScript();
-                    }
-                }, 250)
-            );
-        } else {
+        if ('IntersectionObserver' in window) {
             const observer = new IntersectionObserver(
                 () => {
                     appendTwitterScript();

@@ -3,24 +3,22 @@
 const browserSync = require('browser-sync').create();
 
 const gulp = require('gulp');
-const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const uncss = require('postcss-uncss');
 const svgSprite = require('gulp-svg-sprite');
 
-const siteRoot = '_site';
-const cssFiles = '_scss/**/*.scss';
-
 gulp.task('scss', ()=> {
-	const processors = [
-		autoprefixer({browsers: ['last 2 versions']}),
-		cssnano(),
-	];
-
-	return gulp.src(cssFiles)
-		.pipe(sass())
-		.pipe(postcss(processors))
+	return gulp.src('css/tailwind.css')
+		.pipe(postcss([
+            autoprefixer(),
+            cssnano(),
+            uncss({
+                html: ['./_site/index.html', "./_site/blog/**/*.html"],
+				ignore: ['.wf-active(.*)', '#twitter-widget-0']
+			})
+        ]))
 		.pipe(gulp.dest('./_includes/css'));
 });
 
@@ -29,8 +27,8 @@ gulp.task('svg', () => {
 		.pipe(svgSprite({
 			shape: {
 				dimension: {
-					maxWidth : 40,
-					maxHeight: 40
+					maxWidth : 20,
+					maxHeight: 20
 				},
 				spacing : {
 					padding: 10

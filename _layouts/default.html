@@ -9,7 +9,7 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="{{ "/css/tailwind.css" | prepend: site.baseurl }}">
+    <style>{% include css/tailwind.css %}</style>
 </head>
 <body>
 <div style="display: none;">{% include svg/symbol/svg/sprite.symbol.svg %}</div>

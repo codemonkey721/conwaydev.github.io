@@ -1,86 +1,80 @@
----
-layout: compress
----
-
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <style>{% include css/main.css %}</style>
+    <link rel="stylesheet" href="{{ "/css/tailwind.css" | prepend: site.baseurl }}">
 </head>
 <body>
-
 <div style="display: none;">{% include svg/symbol/svg/sprite.symbol.svg %}</div>
 
-<header class="header" role="banner">
-    <div class="wrapper">
-        <div class="row">
-            <div class="column">
-                <a class="header__title" href="{{ site.baseurl }}/">
-                    <svg>
-                        <title>Justin Conway</title>
-                        <use xlink:href="#logo"></use>
-                    </svg>
+<header class="sticky bg-white pin-t pin-l pin-r py-4 font-normal relative">
+    <a href="#content" class="screenreader absolute pin-t pin-l bg-black hover:text-blue text-white p-2">
+        Skip to main content
+    </a>
+    <div class="max-w-2xl mx-auto px-4">
+        <a class="flex items-center w-full no-underline text-black hover:text-blue p-2" href="/">
+            <svg class="block mr-2" height="20" width="20" aria-hidden="true">
+                <use xlink:href="#logo"></use>
+            </svg>
 
-                    Justin Conway • Chicago-based Front End Developer
-                </a>
-            </div>
-        </div>
+            <span class="poppins block">
+                Justin Conway
+            </span>
+
+             <span class="hidden lg:block text-sm">
+                 &nbsp;•&nbsp;Chicago-based Front End Developer
+             </span>
+        </a>
     </div>
 </header>
 
-{{ content }}
+<main id="content">
+    {{ content }}
+</main>
 
-<footer class="footer" role="contentinfo">
-    <div class="wrapper">
-        <div class="footer__info">
-            <div class="row row--center">
-                <div class="column column--split">
-                    <p class="footer__copy">
-                        &copy; {{ site.time | date: '%Y' }} Justin Conway
-                    </p>
-                </div>
+<footer class="py-4" role="contentinfo">
+    <div class="max-w-2xl mx-auto px-4 flex flex-wrap items-center">
+        <small class="block">
+            &copy; {{ site.time | date: '%Y' }} Justin Conway
+        </small>
 
-                <div class="column column--split">
-                    <div class="footer__social">
-                        <a href="https://twitter.com/conwaydev" title="Twitter">
-                            <svg>
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                        </a>
+        <div class="ml-auto flex">
+            <a class="block w-6 text-black hover:text-blue" rel="noreferrer" href="https://twitter.com/conwaydev" title="Twitter">
+                <svg class="block w-6 h-6">
+                    <use xlink:href="#twitter"></use>
+                </svg>
+            </a>
 
-                        <a href="https://github.com/conwaydev/" title="GitHub">
-                            <svg>
-                                <use xlink:href="#github"></use>
-                            </svg>
-                        </a>
+            <a class="block w-6 text-black hover:text-blue" rel="noreferrer" href="https://github.com/conwaydev/" title="GitHub">
+                <svg class="block w-6 h-6">
+                    <use xlink:href="#github"></use>
+                </svg>
+            </a>
 
-                        <a href="http://codepen.io/conwaydev/" title="CodePen">
-                            <svg>
-                                <use xlink:href="#codepen"></use>
-                            </svg>
-                        </a>
+            <a class="block w-6 text-black hover:text-blue" rel="noreferrer" href="http://codepen.io/conwaydev/" title="CodePen">
+                <svg class="block w-6 h-6">
+                    <use xlink:href="#codepen"></use>
+                </svg>
+            </a>
 
-                        <a href="https://www.linkedin.com/in/justin-conway-a2260a94" title="LinkedIn">
-                            <svg>
-                                <use xlink:href="#linkedin"></use>
-                            </svg>
-                        </a>
+            <a class="block w-6 text-black hover:text-blue" rel="noreferrer" href="https://www.linkedin.com/in/justin-conway-a2260a94" title="LinkedIn">
+                <svg class="block w-6 h-6">
+                    <use xlink:href="#linkedin"></use>
+                </svg>
+            </a>
 
-                        <a href="mailto:justin@conwaydev.com" title="Email">
-                            <svg>
-                                <use xlink:href="#message"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <a class="block w-6 text-black hover:text-blue" rel="noreferrer" href="mailto:justin@conwaydev.com" title="Email">
+                <svg class="block w-6 h-6">
+                    <use xlink:href="#message"></use>
+                </svg>
+            </a>
         </div>
     </div>
 </footer>

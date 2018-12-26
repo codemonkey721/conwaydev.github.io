@@ -2,90 +2,83 @@
 layout: default
 ---
 
-<section class="intro section">
-    <div class="wrapper">
-        <div class="row row--center">
-            <div class="column column--split column--reverse">
-                <picture>
-                    <source srcset="assets/img/headshot.jpg, assets/img/headshot@2x.jpg 2x">
-                    <img srcset="assets/img/headshot.jpg, assets/img/headshot@2x.jpg 2x" alt="Justin Conway">
-                </picture>
-            </div>
+<section class="max-w-2xl mx-auto lg:pt-8 lg:pb-32 flex flex-wrap lg:flex-row-reverse">
+    <div class="w-full lg:w-1/2 px-4">
+        <picture class="block max-w-full w-full h-auto">
+            <source srcset="assets/img/headshot.jpg, assets/img/headshot@2x.jpg 2x">
+            <img class="db w-full h-auto" srcset="assets/img/headshot.jpg, assets/img/headshot@2x.jpg 2x" alt="Justin Conway">
+        </picture>
+    </div>
 
-            <div class="column column--split">
-                <div class="intro__description">
-                    <h1 class="intro__title">Justin Conway</h1>
+    <div class="w-full lg:w-1/2 px-4 mt-4 lg:mt-0">
+        <h1>Justin Conway</h1>
 
-                    <p>Justin Conway is a Chicago-based Front End Developer currently working as a Senior Web Engineer at <a href="//sproutsocial.com" target="_blank" rel="noopener nofollow">Sprout&nbsp;Social</a> and is passionate about the web and pork.</p>
+        <p>Justin Conway is a Chicago-based Front End Developer currently working as a Senior Web Engineer at <a href="//sproutsocial.com" target="_blank" rel="noreferrer">Sprout&nbsp;Social</a> and is passionate about the web and pork.</p>
 
-                    <p>He has over eight years of experience solving problems with web technologies. He is always interested in finding new ways to develop challenging and innovative web products.</p>
-                </div>
-            </div>
-        </div>
+        <p>He has over eight years of experience solving problems with web technologies. He is always interested in finding new ways to develop challenging and innovative web products.</p>
+
+        <p>Justin is available at
+            <a class="text-black hover:text-blue" rel="noreferrer" href="https://twitter.com/conwaydev">Twitter</a>,
+            <a class="text-black hover:text-blue" rel="noreferrer" href="https://github.com/conwaydev/">GitHub</a>,
+            <a class="text-black hover:text-blue" rel="noreferrer" href="http://codepen.io/conwaydev/">CodePen</a>,
+            <a class="text-black hover:text-blue" rel="noreferrer" href="https://www.linkedin.com/in/justin-conway-a2260a94">LinkedIn</a>,
+            <a class="text-black hover:text-blue" rel="noreferrer" href="mailto:justin@conwaydev.com" title="Email">or by email</a>.
+        </p>
     </div>
 </section>
 
-<section class="section section--padded">
-    <div class="wrapper">
-        <div class="row">
-            <div class="column column--split">
-                <div class="posts">
+<section class="max-w-2xl mx-auto lg:pt-8 lg:pb-32 flex flex-wrap">
+    <div class="w-full lg:w-1/2 px-2">
+        {% for post in site.posts limit:1 %}
 
-                    {% for post in site.posts limit:1 %}
+        <article>
+            <a class="block p-2" href="{{ post.url | prepend: site.baseurl }}">
+                <h2 class="text-3xl my-0">
+                    {{ post.title }}
+                </h2>
 
-                        <article class="post">
-                            <div class="post__date">
-                                <time datetime="{{post.date}}">
-                                    {{ post.date | date: "%b %-d, %Y" }}
-                                </time>
-                            </div>
+                <time class="block mt-0 text-sm" datetime="{{post.date}}">
+                    {{ post.date | date: "%b %-d, %Y" }}
+                </time>
+            </a>
 
-                            <h2 class="post__title">
-                                <a href="{{ post.url | prepend: site.baseurl }}">
-                                    {{ post.title }}
-                                </a>
-                            </h2>
-
-                            <div class="post__content">
-                                {% if post.description %}
-                                    <p>{{ post.description }}</p>
-                                {% else %}
-                                    {{ post.excerpt }}
-                                {% endif %}
-                            </div>
-                        </article>
-
-                    {% endfor %}
-
-                    <p><strong>Older posts:</strong></p>
-
-                    {% for post in site.posts offset:1 limit:2 %}
-
-                        <a href="{{ post.url | prepend: site.baseurl }}">
-                            <h2 class="post__title">
-                                {{ post.title }}
-                            </h2>
-
-                            <div>
-                                <time datetime="{{post.date}}">
-                                    {{ post.date | date: "%b %-d, %Y" }}
-                                </time>
-                            </div>
-                        </a>
-
-                    {% endfor %}
-
-                </div>
+            <div class="mt-2 p-2">
+                {% if post.description %}
+                <p>{{ post.description }}</p>
+                {% else %}
+                {{ post.excerpt }}
+                {% endif %}
             </div>
-            <div class="column column--split">
-                <a class="twitter-timeline js-tweets"
-                   href="https://twitter.com/conwaydev"
-                   data-widget-id="351951321798168576"
-                   data-chrome="noheader nofooter noborders transparent"
-                   style="width: 100%;">
-                    Loading tweets by @conwaydev...
-                </a>
-            </div>
-        </div>
+        </article>
+
+        {% endfor %}
+
+        <p class="text-sm p-2"><strong>Older posts:</strong></p>
+
+        {% for post in site.posts offset:1 limit:2 %}
+
+        <a class="block w-full p-2 mt-4" href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="text-2xl my-0">
+                {{ post.title }}
+            </h2>
+
+            <time class="block mt-0 text-sm" datetime="{{post.date}}">
+                {{ post.date | date: "%b %-d, %Y" }}
+            </time>
+        </a>
+
+        {% endfor %}
+    </div>
+
+    <div class="hidden lg:block lg:w-1/2 px-4 h-full" aria-hidden="true">
+        <a class="twitter-timeline js-tweets w-full"
+           href="https://twitter.com/conwaydev"
+           data-widget-id="351951321798168576"
+           data-chrome="noheader nofooter noborders transparent"
+           tabindex="-1"
+           style="width: 100% !important;"
+        >
+            Loading tweets by @conwaydev...
+        </a>
     </div>
 </section>

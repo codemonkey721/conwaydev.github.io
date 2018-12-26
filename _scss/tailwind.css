@@ -1,0 +1,110 @@
+@tailwind preflight;
+@tailwind components;
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    font-family: "Andale Mono", "PT Mono", monospace;
+    font-display: swap;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+}
+
+.wf-active body {
+    font-family: "Roboto Mono", "Andale Mono", "PT Mono", monospace;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 1.414em 0 .5em;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+}
+
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active .poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.369rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.777rem;
+}
+
+
+h3 {
+    font-size: 1.777rem;
+}
+
+h4 {
+    font-size: 1.333em;
+}
+
+small,
+.font_small {
+    font-size: .75rem;
+}
+
+
+@media (min-width: 52rem) {
+    html {
+        font-size: 1.125rem;
+    }
+    h1 {
+        font-size: 3.157rem;
+    }
+    h2 {
+        font-size: 2.369rem;
+    }
+}
+
+.screenreader {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+.screenreader:focus {
+    width: auto;
+    clip: initial;
+    clip-path: initial;
+    height: auto;
+    margin: 0;
+}
+
+#twitter-widget-0 {
+    width: 100% !important;
+}
+
+@tailwind utilities;

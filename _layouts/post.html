@@ -2,32 +2,15 @@
 layout: default
 ---
 
-<section class="section section--padded section--gray">
-  <div class="wrapper">
-    <div class="row">
-      <div class="column column--split" style="margin: 0 auto;">
-        <article class="post">
-          <div class="post__date">
-            <time datetime="{{page.date}}">
+<article class="max-w-2xl mx-auto px-4">
+  <h1 class="my-0">
+    {{ page.title }}
+  </h1>
+  <time class="block w-full" datetime="{{page.date}}">
+    {{ page.date | date: "%b %-d, %Y" }}
+  </time>
 
-              {{ page.date | date: "%b %-d, %Y" }}
-
-            </time>
-          </div>
-
-          <h1 class="post__title post__title--large">
-
-            {{ page.title }}
-
-          </h1>
-
-          <div class="post__content">
-
-            {{ content }}
-
-          </div>
-        </article>
-      </div>
-    </div>
+  <div class="max-w-lg mt-4">
+    {{ content }}
   </div>
-</section>
+</article>

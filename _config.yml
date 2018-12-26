@@ -1,5 +1,5 @@
 ---
-title: Justin Conway Chicago-based Front End Developer
+title: Justin Conway • Chicago-based Front End Developer
 timezone: UTC
 collections:
   posts:
@@ -13,9 +13,7 @@ collections:
     output: true
 email: justin@conwaydev.com
 description: 'Justin Conway is a Chicago-based Front End Developer passionate about
-  the web and pork.
-
-'
+  the web and pork.'
 baseurl: 
 url: http://conwaydev.com
 twitter_username: conwaydev

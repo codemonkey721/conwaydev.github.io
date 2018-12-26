@@ -21,7 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  html.wf-active & {
+  .wf-active & {
     font-family: "Roboto Mono", "Andale Mono", "PT Mono", monospace;
   }
 }
@@ -30,7 +30,15 @@ h1,
 h2,
 h3,
 h4 {
-  @include bold-font;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+}
+
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4 {
+  font-family: 'Poppins', sans-serif;
 }
 
 strong {

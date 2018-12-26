@@ -1,7 +1,5 @@
 // This is the stylesheet!
 
-@import "./../node_modules/bootstrap/scss/bootstrap-reboot";
-
 @import "type";
 @import "var/mixins";
 @import "var/colors";
@@ -11,7 +9,6 @@
 @import "base";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/grid";
 @import "layout/section";
 
 // Layouts

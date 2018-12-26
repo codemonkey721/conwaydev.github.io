@@ -16,11 +16,11 @@ ready(() => {
                     appendTwitterScript();
                 },
                 {
-                    threshold: 0.5
+                    threshold: 1
                 }
             );
 
-            if (tweets) {
+            if (tweets && (window.outerWidth > 600)) {
                 observer.observe(tweets);
             }
         }

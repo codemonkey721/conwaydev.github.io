@@ -13,26 +13,26 @@ layout: default
     <div class="w-full lg:w-1/2 px-4 mt-4 lg:mt-0">
         <h1>Justin Conway</h1>
 
-        <p>Justin Conway is a Chicago-based Front End Developer currently working as a Senior Web Engineer at <a href="//sproutsocial.com" target="_blank" rel="noreferrer">Sprout&nbsp;Social</a> and is passionate about the web and pork.</p>
+        <p>Justin Conway is a Chicago-based Front End Developer currently working as a Senior Web Engineer at <a class="text-black hover:text-blue" href="//sproutsocial.com" target="_blank" rel="noreferrer">Sprout&nbsp;Social</a> and is passionate about the web and pork.</p>
 
         <p>He has over eight years of experience solving problems with web technologies. He is always interested in finding new ways to develop challenging and innovative web products.</p>
 
         <p>Justin is available at
-            <a class="text-black hover:text-blue" rel="noreferrer" href="https://twitter.com/conwaydev">Twitter</a>,
-            <a class="text-black hover:text-blue" rel="noreferrer" href="https://github.com/conwaydev/">GitHub</a>,
-            <a class="text-black hover:text-blue" rel="noreferrer" href="http://codepen.io/conwaydev/">CodePen</a>,
-            <a class="text-black hover:text-blue" rel="noreferrer" href="https://www.linkedin.com/in/justin-conway-a2260a94">LinkedIn</a>,
-            <a class="text-black hover:text-blue" rel="noreferrer" href="mailto:justin@conwaydev.com" title="Email">or by email</a>.
+            <a target="_blank" class="text-black hover:text-blue" rel="noreferrer" href="https://twitter.com/conwaydev">Twitter</a>,
+            <a target="_blank" class="text-black hover:text-blue" rel="noreferrer" href="https://github.com/conwaydev/">GitHub</a>,
+            <a target="_blank" class="text-black hover:text-blue" rel="noreferrer" href="http://codepen.io/conwaydev/">CodePen</a>,
+            <a target="_blank" class="text-black hover:text-blue" rel="noreferrer" href="https://www.linkedin.com/in/justin-conway-a2260a94">LinkedIn</a>,
+            <a target="_blank" class="text-black hover:text-blue" rel="noreferrer" href="mailto:justin@conwaydev.com" title="Email">or by email</a>.
         </p>
     </div>
 </section>
 
-<section class="max-w-2xl mx-auto lg:pt-8 lg:pb-32 flex flex-wrap">
+<section class="max-w-2xl mx-auto lg:py-8 flex flex-wrap">
     <div class="w-full lg:w-1/2 px-2">
         {% for post in site.posts limit:1 %}
 
         <article>
-            <a class="block p-2" href="{{ post.url | prepend: site.baseurl }}">
+            <a class="block p-2 text-black hover:text-blue" href="{{ post.url | prepend: site.baseurl }}">
                 <h2 class="text-3xl my-0">
                     {{ post.title }}
                 </h2>
@@ -57,7 +57,7 @@ layout: default
 
         {% for post in site.posts offset:1 limit:2 %}
 
-        <a class="block w-full p-2 mt-4" href="{{ post.url | prepend: site.baseurl }}">
+        <a class="block w-full p-2 mt-4 text-black hover:text-blue" href="{{ post.url | prepend: site.baseurl }}">
             <h2 class="text-2xl my-0">
                 {{ post.title }}
             </h2>

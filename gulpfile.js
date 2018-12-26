@@ -16,7 +16,7 @@ gulp.task('scss', ()=> {
             cssnano(),
             uncss({
                 html: ['./_site/index.html', "./_site/blog/**/*.html"],
-				ignore: ['.wf-active(.*)', '#twitter-widget-0']
+                ignore: [/.*wf-active.*/, '#twitter-widget-0']
 			})
         ]))
 		.pipe(gulp.dest('./_includes/css'));

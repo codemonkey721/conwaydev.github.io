@@ -10,7 +10,7 @@ description: Introduction to the Screaming Frog SEO software as well as some int
 
 Recently I've had to learn a _lot_ about SEO in a very short amount of time. I would say the biggest "gotcha" moment I've had is finding out about and using the [Screaming Frog SEO Spider](https://www.screamingfrog.co.uk/seo-spider/).
 
-<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/img/screamingfrog.jpg" alt="Screaming Frog SEO Spider" />
+<img src="/assets/img/screamingfrog.jpg" alt="Screaming Frog SEO Spider" />
 
 > The Screaming Frog SEO Spider is a website crawler, that allows you to crawl websites’ URLs and fetch key onsite elements to analyse from an SEO perspective. Download for free, or purchase a licence for additional features.
 
@@ -24,7 +24,7 @@ Screaming Frog rules for performing an SEO audit on your site, but I'd like to p
 
 Well of course you're an incredible web developer who is the Michael Jordan of web page performance and you never have any slow loading pages ever, right? Well if for some reason you _might_ have some slow pages Screaming Frog can identify those immediately.
 
-<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/img/response-time.jpg" alt="Screaming Frog SEO Spider Response Times" />
+<img src="/assets/img/response-time.jpg" alt="Screaming Frog SEO Spider Response Times" />
 
 All you need to do is filter by "Response Time" in the main crawl!
 
@@ -32,11 +32,11 @@ All you need to do is filter by "Response Time" in the main crawl!
 
 By default Screaming Frog is really awesome with images. If it finds it in your markup it will automatically make a request for that image, which rules! Now how about if you're a radical web developer who lazy loads all their images so that their users don't have to unnecessarily download each one <sup>2</sup>? Well you're in luck because theres a special part of Screaming Frog called "Custom Extractions". All you need to do is add either an XPath or a regex for your images like so:
 
-<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/img/extraction.jpg" alt="Screaming Frog SEO Spider Custom Extraction" />
+<img src="/assets/img/extraction.jpg" alt="Screaming Frog SEO Spider Custom Extraction" />
 
 Then we can see that we got all the images on the page, even though those were already lazy loaded:
 
-<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/img/extraction-success.jpg" alt="Screaming Frog SEO Spider Custom Extraction Success" />
+<img src="/assets/img/extraction-success.jpg" alt="Screaming Frog SEO Spider Custom Extraction Success" />
 
 I didn't really understand XPath (I still don't), but I find its easiest to get the global images by simply placing `//img`. Its even easier to get the value through regex, but this will suffice for most cases.
 

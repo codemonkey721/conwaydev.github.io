@@ -27,4 +27,3 @@ exclude:
 - webpack.config.js
 - webpack.production.config.js
 - s3_website.yml
-- assets/svg

@@ -1,8 +1,7 @@
 'use strict';
 
-const browserSync = require('browser-sync').create();
-
 const gulp = require('gulp');
+const tailwindcss = require('tailwindcss');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
@@ -12,6 +11,7 @@ const svgSprite = require('gulp-svg-sprite');
 gulp.task('scss', ()=> {
 	return gulp.src('css/tailwind.css')
 		.pipe(postcss([
+			tailwindcss('tailwind.js'),
             autoprefixer(),
             cssnano(),
             uncss({
@@ -33,13 +33,13 @@ gulp.task('svg', () => {
 				spacing : {
 					padding: 10
 				},
-				dest: 'intermediate-svg'
+				dest: 'svg'
 			},
 			mode : {
 				symbol: true
 			}
 		}))
-		.pipe(gulp.dest('./_includes/svg'));
+		.pipe(gulp.dest('./assets/svg'));
 });
 
 gulp.task('default', ['svg', 'scss']);

@@ -900,7 +900,7 @@ module.exports = {
     cursor: ['responsive'],
     display: ['responsive'],
     flexbox: ['responsive'],
-    float: ['responsive'],
+    float: false,
     fonts: ['responsive'],
     fontWeights: ['responsive', 'hover', 'focus'],
     height: ['responsive'],
@@ -912,9 +912,9 @@ module.exports = {
     minHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
-    objectFit: false,
+    objectFit: ['responsive'],
     objectPosition: false,
-    opacity: ['responsive'],
+    opacity: ['responsive', 'hover', 'focus'],
     outline: ['focus'],
     overflow: ['responsive'],
     padding: ['responsive'],
@@ -976,5 +976,4 @@ module.exports = {
     important: false,
     separator: ':',
   },
-
-}
+};

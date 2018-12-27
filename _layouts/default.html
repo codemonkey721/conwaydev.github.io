@@ -1,84 +1,85 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <style>{% include css/tailwind.css %}</style>
-</head>
-<body>
-<div style="display: none;">{% include svg/symbol/svg/sprite.symbol.svg %}</div>
-
-<header class="sticky bg-white pin-t pin-l pin-r py-4 font-normal relative">
-    <a href="#content" class="screenreader absolute pin-t pin-l bg-black hover:text-blue text-white p-2">
-        Skip to main content
-    </a>
-    <div class="max-w-2xl mx-auto px-4">
-        <a class="flex items-center w-full no-underline text-black hover:text-blue p-2" href="/">
-            <svg class="block mr-2" height="20" width="20" aria-hidden="true">
-                <use xlink:href="#logo"></use>
-            </svg>
-
-            <span class="poppins block">
-                Justin Conway
-            </span>
-
-             <span class="hidden lg:block text-sm">
-                 &nbsp;•&nbsp;Chicago-based Front End Developer
-             </span>
-        </a>
-    </div>
-</header>
-
-<main id="content">
-    {{ content }}
-</main>
-
-<footer class="py-4" role="contentinfo">
-    <div class="max-w-2xl mx-auto px-4 flex flex-wrap items-center">
-        <small class="block">
-            &copy; {{ site.time | date: '%Y' }} Justin Conway
-        </small>
-
-        <div class="ml-auto flex">
-            <a target="_blank" class="block w-6 text-black hover:text-blue" rel="noreferrer" href="https://twitter.com/conwaydev" title="Twitter">
-                <svg class="block w-6 h-6">
-                    <use xlink:href="#twitter"></use>
-                </svg>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+        {% if jekyll.environment == "production" %}
+        <style>{% include css/tailwind.css %}</style>
+        {% else %}
+        <link rel="stylesheet" href="/css/tailwind.css">
+        {% endif %}
+    </head>
+    <body>
+        <header class="sticky bg-white pin-t pin-l pin-r py-4 font-normal relative">
+            <a href="#content" class="screenreader absolute pin-t pin-l bg-black hover:text-blue text-white p-2">
+                Skip to main content
             </a>
+            <div class="max-w-2xl mx-auto px-4">
+                <a class="flex items-center w-full no-underline text-black hover:text-blue p-2" href="/">
+                    <svg class="block mr-2" height="20" width="20" aria-hidden="true">
+                        <use xlink:href="/assets/svg/symbol/svg/sprite.symbol.svg#logo"></use>
+                    </svg>
 
-            <a target="_blank" class="block w-6 text-black hover:text-blue" rel="noreferrer" href="https://github.com/conwaydev/" title="GitHub">
-                <svg class="block w-6 h-6">
-                    <use xlink:href="#github"></use>
-                </svg>
-            </a>
+                    <span class="poppins block">
+                        Justin Conway
+                    </span>
 
-            <a target="_blank" class="block w-6 text-black hover:text-blue" rel="noreferrer" href="http://codepen.io/conwaydev/" title="CodePen">
-                <svg class="block w-6 h-6">
-                    <use xlink:href="#codepen"></use>
-                </svg>
-            </a>
+                     <span class="hidden lg:block text-sm">
+                         &nbsp;•&nbsp;Chicago-based Front End Developer
+                     </span>
+                </a>
+            </div>
+        </header>
 
-            <a target="_blank" class="block w-6 text-black hover:text-blue" rel="noreferrer" href="https://www.linkedin.com/in/justin-conway-a2260a94" title="LinkedIn">
-                <svg class="block w-6 h-6">
-                    <use xlink:href="#linkedin"></use>
-                </svg>
-            </a>
+        <main id="content">
+            {{ content }}
+        </main>
 
-            <a target="_blank" class="block w-6 text-black hover:text-blue" rel="noreferrer" href="mailto:justin@conwaydev.com" title="Email">
-                <svg class="block w-6 h-6">
-                    <use xlink:href="#message"></use>
-                </svg>
-            </a>
-        </div>
-    </div>
-</footer>
+        <footer class="py-4" role="contentinfo">
+            <div class="max-w-2xl mx-auto px-4 flex flex-wrap items-center">
+                <small class="block">
+                    &copy; {{ site.time | date: '%Y' }} Justin Conway
+                </small>
 
-<script async src="{{ "/js/index.min.js" | prepend: site.baseurl }}"></script>
-</body>
+                <div class="ml-auto flex">
+                    <a target="_blank" class="block text-black hover:text-blue" rel="noreferrer" href="https://twitter.com/conwaydev" title="Twitter">
+                        <svg class="block w-8 h-8">
+                            <use xlink:href="/assets/svg/symbol/svg/sprite.symbol.svg#twitter"></use>
+                        </svg>
+                    </a>
+
+                    <a target="_blank" class="block text-black hover:text-blue" rel="noreferrer" href="https://github.com/conwaydev/" title="GitHub">
+                        <svg class="block w-8 h-8">
+                            <use xlink:href="/assets/svg/symbol/svg/sprite.symbol.svg#github"></use>
+                        </svg>
+                    </a>
+
+                    <a target="_blank" class="block text-black hover:text-blue" rel="noreferrer" href="http://codepen.io/conwaydev/" title="CodePen">
+                        <svg class="block w-8 h-8">
+                            <use xlink:href="/assets/svg/symbol/svg/sprite.symbol.svg#codepen"></use>
+                        </svg>
+                    </a>
+
+                    <a target="_blank" class="block text-black hover:text-blue" rel="noreferrer" href="https://www.linkedin.com/in/justin-conway-a2260a94" title="LinkedIn">
+                        <svg class="block w-8 h-8">
+                            <use xlink:href="/assets/svg/symbol/svg/sprite.symbol.svg#linkedin"></use>
+                        </svg>
+                    </a>
+
+                    <a target="_blank" class="block text-black hover:text-blue" rel="noreferrer" href="mailto:justin@conwaydev.com" title="Email">
+                        <svg class="block w-8 h-8">
+                            <use xlink:href="/assets/svg/symbol/svg/sprite.symbol.svg#message"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script async src="/js/index.min.js"></script>
+    </body>
 </html>

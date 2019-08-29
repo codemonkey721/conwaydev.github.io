@@ -12,9 +12,7 @@ Well I’m going to do something about, and that something is blogging about me 
 
 ## A CMS will make me write blog posts right?
 
-I’ve been meaning to look into [Netlify CMS](https://www.netlifycms.org/). In my mind, creating a space to write thats not in code will ideally inspire me to write more. Now this is super unlikely, but right now I’m feeling it. So thats what I did!
-
-I went ahead and integrated Netlify with my existing set up on GitHub pages. My next steps are definitely going to start migrating the actual “hosting” to Netlify because if how AWESOME the tooling is, but this is the first step.
+I’ve been meaning to look into [Netlify CMS](https://www.netlifycms.org/). In my mind, creating a space to write thats not in code will ideally inspire me to write more. Now this is super unlikely, but right now I’m feeling it. So thats what I did! I went ahead and integrated Netlify with my existing set up on GitHub pages. My next steps are definitely going to start migrating the actual “hosting” to Netlify because of how AWESOME the tooling is, but this is the first step.
 
 ## Do I have an “End Goal”?
 

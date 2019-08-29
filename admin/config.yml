@@ -4,6 +4,9 @@ backend:
   branch: master
   site_domain: silly-kirch-5c82bb.netlify.com
 
+media_folder: "assets/img"
+public_folder: "/assets" 
+
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI

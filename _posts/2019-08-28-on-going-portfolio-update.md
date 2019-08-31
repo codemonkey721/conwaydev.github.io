@@ -16,7 +16,7 @@ I’ve been meaning to look into [Netlify CMS](https://www.netlifycms.org/). In 
 
 ## Do I have an “End Goal”?
 
-Not _really_, but I would like a ”fancier stack“, and a place for me to just _write_, not look at the code that supports this portfolio (this immediately makes me want to redo everything or just ignore what I wanted to write about). There are some things I’d definitely like to accomplish:
+Not _really_, but I would like a “fancier stack”, and a place for me to just _write_, not look at the code that supports this portfolio (this immediately makes me want to redo everything or just ignore what I wanted to write about). There are some things I’d definitely like to accomplish:
 
 * Use either [Gatsby](https://www.gatsbyjs.org/) or [Eleventy](https://www.11ty.io/) as a static site generator
   * This site is currently [Jekyll](https://jekyllrb.com/) based which is great, but I want to use the cool new shiny stuff!

@@ -8,16 +8,24 @@ const cssnano = require('cssnano');
 const uncss = require('postcss-uncss');
 const svgSprite = require('gulp-svg-sprite');
 
+gulp.task('scss:dev', ()=> {
+  return gulp.src('_scss/tailwind.css')
+    .pipe(postcss([
+      tailwindcss('tailwind.js'),
+      autoprefixer(),
+    ]))
+    .pipe(gulp.dest('./_includes/css'));
+});
+
 gulp.task('scss', ()=> {
-	return gulp.src('css/tailwind.css')
+	return gulp.src('_scss/tailwind.css')
 		.pipe(postcss([
 			tailwindcss('tailwind.js'),
             autoprefixer(),
             cssnano(),
             uncss({
                 html: ['./_site/index.html', "./_site/blog/**/*.html"],
-                ignore: [/.*wf-active.*/, '#twitter-widget-0']
-			})
+            })
         ]))
 		.pipe(gulp.dest('./_includes/css'));
 });
@@ -42,4 +50,5 @@ gulp.task('svg', () => {
 		.pipe(gulp.dest('./assets/svg'));
 });
 
+gulp.task('develop', ['scss:dev']);
 gulp.task('default', ['svg', 'scss']);

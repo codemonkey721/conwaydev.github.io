@@ -2,6 +2,8 @@
 layout: post
 title: On-going Portfolio Update
 date: 2019-08-28T01:33:07.648Z
+categories:
+  - blog
 description: >-
   Why can’t I just write a blog post without reinventing the universe/ my
   portfolio?

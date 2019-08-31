@@ -8,11 +8,8 @@
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
         <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-        {% if jekyll.environment == "production" %}
-        <style>{% include css/tailwind.css %}</style>
-        {% else %}
-        <link rel="stylesheet" href="/css/tailwind.css">
-        {% endif %}
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600|Roboto+Mono:400,700&display=swap" rel="stylesheet">
+      <style>{% include css/tailwind.css %}</style>
     </head>
     <body>
         <header class="sticky bg-white pin-t pin-l pin-r py-4 font-normal relative">

@@ -6,16 +6,11 @@ html {
 }
 
 body {
-    font-family: "Andale Mono", "PT Mono", monospace;
-    font-display: swap;
+    font-family: "Roboto Mono", "Andale Mono", "PT Mono", monospace;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.45;
-}
-
-.wf-active body {
-    font-family: "Roboto Mono", "Andale Mono", "PT Mono", monospace;
 }
 
 p {
@@ -35,16 +30,8 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-weight: 600;
-}
-
-.wf-active h1,
-.wf-active h2,
-.wf-active h3,
-.wf-active h4,
-.wf-active .poppins {
-    font-family: 'Poppins', sans-serif;
 }
 
 h1 {

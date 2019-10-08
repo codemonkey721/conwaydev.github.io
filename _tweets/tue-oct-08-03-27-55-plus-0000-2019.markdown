@@ -1,6 +1,6 @@
 ---
 title: Tue Oct 08 03:27:55 +0000 2019
-date: Tue Oct 08 03:27:55 +0000 2019
+date: 2019-10-08 03:27:55 Z
 tweet_url: https://twitter.com/conwaydev/status/1181410868610904064
 ---
 

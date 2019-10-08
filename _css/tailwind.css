@@ -1,4 +1,4 @@
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 
 html {
@@ -68,30 +68,6 @@ small,
     h2 {
         font-size: 2.369rem;
     }
-}
-
-.screenreader {
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-}
-.screenreader:focus {
-    width: auto;
-    clip: initial;
-    clip-path: initial;
-    height: auto;
-    margin: 0;
-}
-
-#twitter-widget-0 {
-    width: 100% !important;
 }
 
 @tailwind utilities;

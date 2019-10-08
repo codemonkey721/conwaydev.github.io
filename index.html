@@ -51,8 +51,8 @@ layout: default
   </div>
 </section>
 
-<section class="max-w-6xl mx-auto lg:py-8 flex flex-wrap mt-4 lg:mt-0">
-  <div class="w-full lg:w-1/2 px-2">
+<section class="max-w-6xl mx-auto lg:py-8 flex flex-wrap">
+  <div class="w-full lg:w-1/2 px-2 mt-4 lg:mt-0">
     <h2 class="text-2xl text-gray-600 mt-0 px-2">Writing</h2>
 
     {% for post in site.posts limit:1 %}
@@ -95,7 +95,7 @@ layout: default
 
     {% endfor %}
   </div>
-  <div class="w-full lg:w-1/2 px-2">
+  <div class="w-full lg:w-1/2 px-2 mt-4 lg:mt-0">
     <h2 class="text-2xl text-gray-600 mt-0 px-2">Tweets</h2>
 
     {% for tweet in site.tweets limit:6 %}
@@ -111,6 +111,6 @@ layout: default
 
     {% endfor %}
 
-    <a class="underline" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">View all</a>
+    <a class="underline hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">View all</a>
   </div>
 </section>

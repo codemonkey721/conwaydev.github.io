@@ -17,21 +17,48 @@ p {
     margin-bottom: 1.3em;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1 {
     margin: 1.414em 0 .5em;
     font-weight: inherit;
     line-height: 1.2;
 }
 
-h1,
-h2,
-h3,
+h2 {
+  margin: 1.414em 0 .5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h3 {
+  margin: 1.414em 0 .5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
 h4 {
+  margin: 1.414em 0 .5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
   font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-weight: 600;
+}
+
+h2 {
+  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+}
+
+h3 {
+  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+}
+
+h4 {
+  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
 }
 
 h1 {
@@ -52,8 +79,7 @@ h4 {
     font-size: 1.333em;
 }
 
-small,
-.font_small {
+small {
     font-size: .75rem;
 }
 

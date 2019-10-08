@@ -32,7 +32,7 @@ layout: default
 </section>
 
 <section class="max-w-6xl mx-auto lg:py-8 flex flex-wrap">
-  <h2 class="text-2xl text-grey-dark mt-0 w-full px-4">Work</h2>
+  <h2 class="text-2xl text-gray-600 mt-0 w-full px-4">Work</h2>
 
   <div class="w-full lg:w-2/3 px-4">
     <a class="block border-2 hover:border-blue-600" href="https://sproutsocial.com" target="_blank" rel="noreferrer">
@@ -101,7 +101,7 @@ layout: default
     {% for tweet in site.tweets limit:6 %}
 
       <div class="p-2 {% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
-        <p>{{ tweet.excerpt }}</p>
+        {{ tweet.excerpt }}
         <p>
           <a class="text-gray-600 hover:text-blue-600 underline" href="{{ tweet.tweet_url }}" target="_blank" rel="noopener noreferrer">
             {{ tweet.title }}

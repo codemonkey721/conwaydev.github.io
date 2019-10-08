@@ -4,7 +4,7 @@
   "description": "Pretty much the best website ever",
   "main": "index.js",
   "scripts": {
-    "build": "webpack && gulp && jekyll build",
+    "build": "webpack && jekyll build",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d _site"
   },
@@ -35,6 +35,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-svg-sprite": "^1.3.7",
     "gulp-util": "^3.0.8",
+    "postcss-cli": "^6.1.3",
     "postcss-uncss": "^0.16.1",
     "uncss": "^0.16.2",
     "webfontloader": "^1.6.28",

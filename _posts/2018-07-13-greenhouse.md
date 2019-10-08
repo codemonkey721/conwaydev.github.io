@@ -4,7 +4,8 @@ date: 2018-07-13 21:50:24 Z
 categories:
 - blog
 layout: post
-description: An introduction to what I feel is the best hiring software that I’ve used so far.
+description: An introduction to what I feel is the best hiring software that I’ve
+  used so far.
 ---
 
 <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dha4w82d62smt.cloudfront.net/items/2r2D40241m1s1b3M3m3y/greenhouse.jpg" alt="Greenhouse.io" />

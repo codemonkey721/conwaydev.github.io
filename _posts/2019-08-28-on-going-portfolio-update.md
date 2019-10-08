@@ -1,13 +1,13 @@
 ---
-layout: post
 title: On-going Portfolio Update
-date: 2019-08-28T01:33:07.648Z
+date: 2019-08-28 01:33:07.648000000 Z
 categories:
-  - blog
-description: >-
-  Why can’t I just write a blog post without reinventing the universe/ my
-  portfolio?
+- blog
+layout: post
+description: Why can’t I just write a blog post without reinventing the universe/
+  my portfolio?
 ---
+
 I don’t know where it comes from, but any time I think “I should blog about that” it’s quickly followed by, “I should actually redo my entire portfolio, finally add case studies, and use a completely different technology stack”. I feel like I’m not alone in that sentiment and its SO unnecessary, but it’s there.
 
 Well I’m going to do something about, and that something is blogging about me transforming the portfolio. There are so many cool and interesting technologies in the front-end space now that I think its high time I start playing around with them. Theres a ton of decisions to make along the way but I’m going to start with creating an actual CMS rather than markdown files. 

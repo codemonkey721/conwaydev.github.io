@@ -1,0 +1,9 @@
+---
+title: Tue Oct 08 03:27:55 +0000 2019
+url: https://twitter.com/conwaydev/status/1181410868610904064
+likes: '1'
+retweets: '0'
+---
+
+Thinking a lot of my job can be automated using @zapier
+zaps and I'm pretty ok with that

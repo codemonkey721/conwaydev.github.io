@@ -98,7 +98,7 @@ layout: default
   <div class="w-full lg:w-1/2 px-2 mt-4 lg:mt-0">
     <h2 class="text-2xl text-gray-700 mt-0 px-2">Tweets</h2>
 
-    {% for tweet in site.tweets limit:6 %}
+    {% for tweet in site.tweets limit:6 reversed %}
 
       <div class="p-2 {% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
         {{ tweet.excerpt }}

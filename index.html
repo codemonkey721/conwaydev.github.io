@@ -37,16 +37,19 @@ layout: default
   <div class="w-full lg:w-2/3 px-4">
     <a class="block border-2 hover:border-blue-600" href="https://sproutsocial.com" target="_blank" rel="noreferrer">
       <img class="block w-full h-auto lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/img/sproutsocial.com_.png" loading="lazy" alt="Sprout Social" height="404" width="800" />
+      <span class="sr-only">View sproutsocial.com</span>
     </a>
   </div>
 
   <div class="w-full lg:w-1/3 px-4 flex lg:flex-col justify-between mt-4 lg:mt-0">
     <a class="block border-2 hover:border-blue-600 w-1/2 lg:w-full" href="https://sproutsocial.com/adapt/" target="_blank" rel="noreferrer">
       <img class="block w-full h-auto lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/img/sproutsocial.com_adapt_connection-as-an-inside-job-building-relationships-for-greater-buy-in_.png" loading="lazy" alt="Adapt by Sprout Social" height="404" width="800" />
+      <span class="sr-only">View Adapt by sprout social</span>
     </a>
 
     <a class="block border-2 lg:mt-4 ml-4 lg:ml-0 hover:border-blue-600 w-1/2 lg:w-full" href="https://www.kennychesney.com/?redirect=false" target="_blank" rel="noreferrer">
       <img class="block w-full h-auto lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/img/kennychesney.png" loading="lazy" alt="Kenny Chesney" height="404" width="800" />
+      <span class="sr-only">View Kenny Chesney</span>
     </a>
   </div>
 </section>
@@ -56,7 +59,6 @@ layout: default
     <h2 class="text-2xl text-gray-700 mt-0 px-2">Writing</h2>
 
     {% for post in site.posts limit:1 %}
-
     <article>
       <a class="block p-2 text-black hover:text-blue-600 underline" href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="text-3xl my-0">
@@ -76,13 +78,11 @@ layout: default
         {% endif %}
       </div>
     </article>
-
     {% endfor %}
 
     <p class="text-sm p-2"><strong>Older posts:</strong></p>
 
     {% for post in site.posts offset:1 limit:2 %}
-
     <a class="block w-full p-2 mt-4 text-black hover:text-blue-700 underline" href="{{ post.url | prepend: site.baseurl }}">
       <h2 class="text-2xl my-0">
         {{ post.title }}
@@ -92,25 +92,27 @@ layout: default
         {{ post.date | date: "%b %-d, %Y" }}
       </time>
     </a>
-
     {% endfor %}
   </div>
   <div class="w-full lg:w-1/2 px-2 mt-4 lg:mt-0">
     <h2 class="text-2xl text-gray-700 mt-0 px-2">Tweets</h2>
 
-    {% for tweet in site.tweets limit:6 reversed %}
-
-      <div class="p-2 {% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
+    {% for tweet in site.tweets reversed limit:3 %}
+    <div class="{% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
+      <div class="p-2">
         {{ tweet.excerpt }}
-        <p>
-          <a class="text-gray-700 hover:text-blue-600 underline" href="{{ tweet.tweet_url }}" target="_blank" rel="noopener noreferrer">
-            {{ tweet.title }}
-          </a>
-        </p>
       </div>
-
+      <p>
+        <a class="p-2 text-gray-700 hover:text-blue-600 underline" href="{{ tweet.title }}" target="_blank" rel="noopener noreferrer">
+          <span class="sr-only">View tweet at </span>
+          {{ tweet.date | date: "%m/%d/%Y %T" }}
+        </a>
+      </p>
+    </div>
     {% endfor %}
 
-    <a class="underline hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">View all</a>
+    <a class="underline hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">
+      View all <span class="sr-only">tweets</span>
+    </a>
   </div>
 </section>

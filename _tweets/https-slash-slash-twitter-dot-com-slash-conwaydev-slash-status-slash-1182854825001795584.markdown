@@ -1,5 +1,6 @@
 ---
 title: https://twitter.com/conwaydev/status/1182854825001795584
+date: 2019-10-12 03:15:00 Z
 Field name: date
 ---
 

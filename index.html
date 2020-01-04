@@ -82,7 +82,7 @@ layout: default
 
     <p class="text-sm p-2"><strong>Older posts:</strong></p>
 
-    {% for post in site.posts offset:1 limit:2 %}
+    {% for post in site.posts offset:1 limit:4 %}
     <a class="block w-full p-2 mt-4 text-black hover:text-blue-700 underline" href="{{ post.url | prepend: site.baseurl }}">
       <h2 class="text-2xl my-0">
         {{ post.title }}
@@ -93,5 +93,26 @@ layout: default
       </time>
     </a>
     {% endfor %}
+  </div>
+  <div class="w-full lg:w-1/2 px-2 mt-4 lg:mt-0">
+    <h2 class="text-2xl text-gray-700 mt-0 px-2">Tweets</h2>
+
+    {% for tweet in site.tweets limit:5 %}
+    <div class="{% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
+      <div class="p-2">
+        {{ tweet.excerpt }}
+      </div>
+      <p>
+        <a class="p-2 text-gray-700 hover:text-blue-600 underline" href="https://twitter.com{{ tweet.permalink }}" target="_blank" rel="noopener noreferrer">
+          <span class="sr-only">View tweet at </span>
+          {{ tweet.date }}
+        </a>
+      </p>
+    </div>
+    {% endfor %}
+
+    <a class="underline hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">
+      View all <span class="sr-only">tweets</span>
+    </a>
   </div>
 </section>

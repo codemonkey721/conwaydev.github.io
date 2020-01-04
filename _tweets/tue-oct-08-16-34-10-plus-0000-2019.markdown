@@ -1,6 +1,0 @@
----
-title: https://twitter.com/conwaydev/status/1181608736743395333
-date: 2019-10-08 16:34:10 Z
----
-
-Updated to Catalina and things just work?? Might be the most seamless upgrade  experience so far

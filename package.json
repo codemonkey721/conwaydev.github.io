@@ -8,6 +8,7 @@
     "build:styles": "postcss _css/tailwind.css -o _includes/css/tailwind.css",
     "build:js": "webpack",
     "build": "jekyll build && yarn build:styles && yarn build:js",
+    "develop": "yarn build:styles && yarn build:js && jekyll serve",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d _site"
   },

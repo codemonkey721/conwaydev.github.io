@@ -94,25 +94,4 @@ layout: default
     </a>
     {% endfor %}
   </div>
-  <div class="w-full lg:w-1/2 px-2 mt-4 lg:mt-0">
-    <h2 class="text-2xl text-gray-700 mt-0 px-2">Tweets</h2>
-
-    {% for tweet in site.tweets reversed limit:3 %}
-    <div class="{% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
-      <div class="p-2">
-        {{ tweet.excerpt }}
-      </div>
-      <p>
-        <a class="p-2 text-gray-700 hover:text-blue-600 underline" href="{{ tweet.title }}" target="_blank" rel="noopener noreferrer">
-          <span class="sr-only">View tweet at </span>
-          {{ tweet.date | date: "%m/%d/%Y %T" }}
-        </a>
-      </p>
-    </div>
-    {% endfor %}
-
-    <a class="underline hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">
-      View all <span class="sr-only">tweets</span>
-    </a>
-  </div>
 </section>

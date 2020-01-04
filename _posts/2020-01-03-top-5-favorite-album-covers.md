@@ -4,7 +4,8 @@ date: 2020-01-03 03:50:24 Z
 categories:
 - blog
 layout: post
-description: As much as I don't like music, I can sure appreciate a well designed album cover.
+description: As much as I don't like music, I can sure appreciate a well designed
+  album cover.
 ---
 
 I say that I hate music a _lot_. Sometimes I actually mean it, but to be totally honest the only form of entertainment I enjoy is anything and everything about rock and roll. The only movies I enjoy are concert films and documentaries about rock and roll in 1970s Los Angeles. The only books I enjoy are biographies of Twentieth century country music recording artists and books on The Beatles. I've been thinking about this a lot recently about what my favorite album covers are (not necessarily my favorite albums are, <a href="https://codepen.io/conwaydev/full/EgLRGV" class="underline">I've talked about that</a>), so heres a list of some covers I think about often.

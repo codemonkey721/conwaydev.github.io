@@ -5,11 +5,12 @@ function writeFiles(tweets) {
     tweets.forEach(async tweet => {
         const tweetTime = tweet.timestamp.split(' - ');
         await fs.writeFile(`_tweets/${tweet.id}.md`, `---
+title: '${tweet.id}'
+date: ${new Date( tweetTime[1] ).toISOString().substring(0,10)} 00:00:00 Z
+permalink: "${tweet.permalink}"
 id: ${tweet.id}
-permalink: ${tweet.permalink}
 likes: ${tweet.likes}
 retweets: ${tweet.retweets}
-date: ${new Date( tweetTime[1] ).toISOString().substring(0,10)}
 ---
 
 ${tweet.text}`, () => console.log('nice'));
@@ -31,7 +32,7 @@ ${tweet.text}`, () => console.log('nice'));
                 if (elements[i].getAttribute('data-screen-name') === 'conwaydev') {
                     let tweet = {};
 
-                    tweet.text = elements[i].querySelector('.tweet-text').textContent;
+                    tweet.text = elements[i].querySelector('.tweet-text').innerHTML.replace(/(<\/?(?:a)[^>]*>)|<[^>]+>/ig, '$1');
                     tweet.timestamp = elements[i].querySelector('.tweet-timestamp').getAttribute('title');
                     tweet.id = elements[i].getAttribute('data-tweet-id');
                     tweet.permalink = elements[i].getAttribute('data-permalink-path');

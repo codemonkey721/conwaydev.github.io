@@ -9,7 +9,7 @@ id: ${tweet.id}
 permalink: ${tweet.permalink}
 likes: ${tweet.likes}
 retweets: ${tweet.retweets}
-date: ${new Date( tweetTime[1] ).toISOString()}
+date: ${new Date( tweetTime[1] ).toISOString().substring(0,10)}
 ---
 
 ${tweet.text}`, () => console.log('nice'));

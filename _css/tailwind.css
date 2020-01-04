@@ -100,4 +100,11 @@ small {
     }
 }
 
+header .sr-only:focus {
+    height: auto;
+    width: auto;
+    margin: 0;
+    clip: auto;
+}
+
 @tailwind utilities;

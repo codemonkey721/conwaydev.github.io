@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  schedule:
+    - cron: "0 10 * * 0-7"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Fetches tweets and commits 
+      run: yarn && yarn fetch-tweets && git add . && git commit -am "update tweets"

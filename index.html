@@ -103,7 +103,7 @@ layout: default
         {{ tweet.text }}
       </div>
       <p>
-        <a class="p-2 text-gray-700 hover:text-blue-600 underline" href="https://twitter.com{{ tweet.permalink }}" target="_blank" rel="noopener noreferrer">
+        <a class="p-2 text-gray-700 hover:text-blue-600 underline" href="https://twitter.com/conwaydev/status/{{ tweet.id }}" target="_blank" rel="noopener noreferrer">
           <span class="sr-only">View tweet at </span>
           {{ tweet.time | date: "%b %d, %Y" }}
         </a>

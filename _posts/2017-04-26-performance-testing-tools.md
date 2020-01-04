@@ -24,10 +24,6 @@ I'd like to take this time to showcase 3 different tools I like to use for testi
 
 The last tool I'd like to share is Google's own [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/). The irony of using this tool is running through various Google sites and services and seeing that not even they can get a perfect 100. I believe that their goal is raise awareness and just because you're a Google product doesn't mean that you can get away with bad performance. This one will always drive me nuts, but often a great tool to share with colleagues, particularly in SEO who may not be factoring in performance as to why their search results are what they are.
 
----
-
 There are plenty of options, such as [speedcurve.com](https://speedcurve.com/) or the ones listed in the comment section of [this CSSTricks article](https://css-tricks.com/performance-tools/). The bottom line is that creating performant web pages and applications isn't going anywhere. Optimizing images, only loading what we need, and relying on smarter browser caching techniques is very important, and these tools are quick to call out when you're not. We as developers have a responsibility to ship users the best possible experiences in the most efficient ways, hopefully these tools can help you achieve that!
 
----
-
-Update (01/03/20): This is a pretty outdated post, but at Sprout Social we have been utilizing [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) for our performance monitoring. It offers fantastic metrics as well as great developer tools to integrate with our tech set up.
+**Update (01/03/20):** This is a pretty outdated post, but at Sprout Social we have been utilizing [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) for our performance monitoring. It offers fantastic metrics as well as great developer tools to integrate with our tech set up.

@@ -97,16 +97,15 @@ layout: default
   <div class="w-full lg:w-1/2 px-2 mt-4 lg:mt-0">
     <h2 class="text-2xl text-gray-700 mt-0 px-2">Tweets</h2>
 
-    {% assign tweets = site.tweets | sort:"date" | reverse %}
-    {% for tweet in tweets limit:4 %}
+    {% for tweet in site.data.tweets limit:4 %}
     <div class="text-sm {% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
       <div class="p-2">
-        {{ tweet.excerpt }}
+        {{ tweet.text }}
       </div>
       <p>
         <a class="p-2 text-gray-700 hover:text-blue-600 underline" href="https://twitter.com{{ tweet.permalink }}" target="_blank" rel="noopener noreferrer">
           <span class="sr-only">View tweet at </span>
-          {{ tweet.date | date_to_string }}
+          {{ tweet.time | date: "%b %d, %Y" }}
         </a>
       </p>
     </div>

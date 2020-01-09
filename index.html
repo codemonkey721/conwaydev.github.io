@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="max-w-6xl mx-auto lg:pt-8 flex flex-wrap lg:items-center lg:flex-row-reverse">
+<section class="max-w-6xl mx-auto flex flex-wrap lg:items-center lg:flex-row-reverse">
   <div class="w-full lg:w-1/2 px-4">
     <img
       class="db w-full h-auto"
@@ -17,16 +17,16 @@ layout: default
   <div class="w-full lg:w-1/2 px-4 mt-4 lg:mt-0">
     <h1>Justin Conway</h1>
 
-    <p>Justin Conway is a Chicago-based Front End Developer currently working as an Engineering Manager at <a class="text-black hover:text-blue-600 underline" href="//sproutsocial.com" target="_blank" rel="noreferrer">Sprout&nbsp;Social</a> and is passionate about the web and pork.</p>
+    <p>Justin Conway is a Chicago-based front-end developer currently working as an engineering manager at <a class="text-black hover:text-blue-600" href="//sproutsocial.com" target="_blank" rel="noreferrer">Sprout&nbsp;Social</a> and is passionate about the web and pork.</p>
 
-    <p>He has over eight years of experience solving problems with web technologies. He is always interested in finding new ways to develop challenging and innovative web products.</p>
+    <p>He has spent over ten years of solving problems with web technologies and is always interested in finding new ways to develop challenging and innovative web products.</p>
 
     <p>Justin is available at
-      <a target="_blank" class="text-black hover:text-blue-600 underline" rel="noreferrer" href="https://twitter.com/conwaydev">Twitter</a>,
-      <a target="_blank" class="text-black hover:text-blue-600 underline" rel="noreferrer" href="https://github.com/conwaydev/">GitHub</a>,
-      <a target="_blank" class="text-black hover:text-blue-600 underline" rel="noreferrer" href="http://codepen.io/conwaydev/">CodePen</a>,
-      <a target="_blank" class="text-black hover:text-blue-600 underline" rel="noreferrer" href="https://www.linkedin.com/in/justin-conway-a2260a94">LinkedIn</a>,
-      <a target="_blank" class="text-black hover:text-blue-600 underline" rel="noreferrer" href="mailto:justin@conwaydev.com" title="Email">or by email</a>.
+      <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="https://twitter.com/conwaydev">Twitter</a>,
+      <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="https://github.com/conwaydev/">GitHub</a>,
+      <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="http://codepen.io/conwaydev/">CodePen</a>,
+      <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="https://www.linkedin.com/in/justin-conway-a2260a94">LinkedIn</a>,
+      <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="mailto:justin@conwaydev.com" title="Email">or by email</a>.
     </p>
   </div>
 </section>
@@ -60,7 +60,7 @@ layout: default
 
     {% for post in site.posts limit:1 %}
     <article>
-      <a class="block p-2 text-black hover:text-blue-600 underline" href="{{ post.url | prepend: site.baseurl }}">
+      <a class="block p-2 text-black hover:text-blue-600" href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="text-3xl my-0">
           {{ post.title }}
         </h2>
@@ -83,7 +83,7 @@ layout: default
     <p class="text-sm p-2"><strong>Older posts:</strong></p>
 
     {% for post in site.posts offset:1 limit:4 %}
-    <a class="block w-full p-2 mt-4 text-black hover:text-blue-700 underline" href="{{ post.url | prepend: site.baseurl }}">
+    <a class="block w-full p-2 mt-4 text-black hover:text-blue-600" href="{{ post.url | prepend: site.baseurl }}">
       <h2 class="text-2xl my-0">
         {{ post.title }}
       </h2>
@@ -103,7 +103,7 @@ layout: default
         {{ tweet.text }}
       </div>
       <p>
-        <a class="p-2 text-gray-700 hover:text-blue-600 underline" href="https://twitter.com/conwaydev/status/{{ tweet.id }}" target="_blank" rel="noopener noreferrer">
+        <a class="p-2 text-gray-700 hover:text-blue-600" href="https://twitter.com/conwaydev/status/{{ tweet.id }}" target="_blank" rel="noopener noreferrer">
           <span class="sr-only">View tweet at </span>
           {{ tweet.time | date: "%b %d, %Y" }}
         </a>
@@ -111,7 +111,7 @@ layout: default
     </div>
     {% endfor %}
 
-    <a class="text-sm underline hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">
+    <a class="text-sm hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">
       View all tweets
     </a>
   </div>

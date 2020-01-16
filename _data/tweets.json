@@ -1,6 +1,22 @@
 [
   {
     "screenName": "conwaydev",
+    "id": "1217642866996129792",
+    "time": "2020-01-16T03:00:56.000Z",
+    "isRetweet": false,
+    "isPinned": false,
+    "isReplyTo": false,
+    "text": "Whoa, after writing my first job description, then creating questions and answer rubrics for a tech screen and a hw assignment, then creating Q/As for in-person interviews, someone went through the process got an offer and accepted! I have so much respect for people in hiring wow",
+    "userMentions": [],
+    "hashtags": [],
+    "images": [],
+    "urls": [],
+    "replyCount": 0,
+    "retweetCount": 0,
+    "favoriteCount": 0
+  },
+  {
+    "screenName": "conwaydev",
     "id": "1213529321417117697",
     "time": "2020-01-04T18:35:11.000Z",
     "isRetweet": false,
@@ -11929,6 +11945,22 @@
         ]
       }
     ],
+    "replyCount": 0,
+    "retweetCount": 0,
+    "favoriteCount": 0
+  },
+  {
+    "screenName": "conwaydev",
+    "id": "499965400122015744",
+    "time": "2014-08-14T17:06:54.000Z",
+    "isRetweet": false,
+    "isPinned": false,
+    "isReplyTo": false,
+    "text": "smdh at poorly formatted html emails",
+    "userMentions": [],
+    "hashtags": [],
+    "images": [],
+    "urls": [],
     "replyCount": 0,
     "retweetCount": 0,
     "favoriteCount": 0

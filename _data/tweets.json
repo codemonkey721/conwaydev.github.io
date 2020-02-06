@@ -1,6 +1,54 @@
 [
   {
     "screenName": "conwaydev",
+    "id": "1224892721799815168",
+    "time": "2020-02-05T03:09:16.000Z",
+    "isRetweet": false,
+    "isPinned": false,
+    "isReplyTo": false,
+    "text": "This 100%, awesome tip @ChrisFerdinandi !",
+    "userMentions": [
+      {
+        "screenName": "ChrisFerdinandi",
+        "indices": [
+          23,
+          39
+        ]
+      }
+    ],
+    "hashtags": [],
+    "images": [],
+    "urls": [
+      {
+        "url": "https://gomakethings.com/why-use-a-form-element-when-submitting-fields-with-javascript/",
+        "indices": [
+          41,
+          128
+        ]
+      }
+    ],
+    "replyCount": 0,
+    "retweetCount": 1,
+    "favoriteCount": 1
+  },
+  {
+    "screenName": "conwaydev",
+    "id": "1222253360172191746",
+    "time": "2020-01-28T20:21:24.000Z",
+    "isRetweet": false,
+    "isPinned": false,
+    "isReplyTo": false,
+    "text": "I wish there was a \"Am I doing this right?\" community forum around CCPA and GDPR so companies can standardize their approach. Most companies that aren't using a compliance tool all have wildly different implementations, and I see some and think \"that can't be right\".",
+    "userMentions": [],
+    "hashtags": [],
+    "images": [],
+    "urls": [],
+    "replyCount": 0,
+    "retweetCount": 0,
+    "favoriteCount": 1
+  },
+  {
+    "screenName": "conwaydev",
     "id": "1217642866996129792",
     "time": "2020-01-16T03:00:56.000Z",
     "isRetweet": false,
@@ -11,9 +59,9 @@
     "hashtags": [],
     "images": [],
     "urls": [],
-    "replyCount": 0,
+    "replyCount": 1,
     "retweetCount": 0,
-    "favoriteCount": 0
+    "favoriteCount": 6
   },
   {
     "screenName": "conwaydev",
@@ -11945,22 +11993,6 @@
         ]
       }
     ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "499965400122015744",
-    "time": "2014-08-14T17:06:54.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "smdh at poorly formatted html emails",
-    "userMentions": [],
-    "hashtags": [],
-    "images": [],
-    "urls": [],
     "replyCount": 0,
     "retweetCount": 0,
     "favoriteCount": 0

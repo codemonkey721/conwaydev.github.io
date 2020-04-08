@@ -1,6 +1,46 @@
 [
   {
     "screenName": "conwaydev",
+    "id": "1247707628312186886",
+    "time": "2020-04-08T02:07:34.000Z",
+    "isRetweet": false,
+    "isPinned": false,
+    "isReplyTo": false,
+    "text": "RIP John Prine, thank you for everything you gave to the world. I hope you're up there smoking a 9 mile long cigarette.❤️",
+    "userMentions": [],
+    "hashtags": [],
+    "images": [],
+    "urls": [
+      {
+        "url": "https://www.youtube.com/watch?v=JKPDFQRmG_M",
+        "indices": [
+          119,
+          162
+        ]
+      }
+    ],
+    "replyCount": 0,
+    "retweetCount": 0,
+    "favoriteCount": 0
+  },
+  {
+    "screenName": "conwaydev",
+    "id": "1240534093110153217",
+    "time": "2020-03-19T07:02:30.000Z",
+    "isRetweet": false,
+    "isPinned": false,
+    "isReplyTo": false,
+    "text": "Trying to be mindful of all those \"Please don't notify other members of the team unless absolutely urgent\" emails while now a parent during coronavirus and literally unable to do work until 9pm.",
+    "userMentions": [],
+    "hashtags": [],
+    "images": [],
+    "urls": [],
+    "replyCount": 0,
+    "retweetCount": 0,
+    "favoriteCount": 1
+  },
+  {
+    "screenName": "conwaydev",
     "id": "1238289377182220295",
     "time": "2020-03-13T02:22:48.000Z",
     "isRetweet": false,
@@ -53,7 +93,7 @@
     ],
     "replyCount": 0,
     "retweetCount": 0,
-    "favoriteCount": 3
+    "favoriteCount": 4
   },
   {
     "screenName": "conwaydev",

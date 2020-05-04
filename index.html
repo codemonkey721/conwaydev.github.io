@@ -99,6 +99,9 @@ layout: default
     <div class="text-sm {% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
       <div class="p-2">
         {{ tweet.text }}
+        {% if tweet.images %}
+          <img class="block lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ tweet.images }}" loading="lazy" alt="" />
+        {% endif %}
       </div>
       <p>
         <a class="p-2 text-gray-700 hover:text-blue-600" href="https://twitter.com/conwaydev/status/{{ tweet.id }}" target="_blank" rel="noopener noreferrer">

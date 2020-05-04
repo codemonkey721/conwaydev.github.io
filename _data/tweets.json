@@ -1,6 +1,24 @@
 [
   {
     "screenName": "conwaydev",
+    "id": "1248024865585737729",
+    "time": "2020-04-08T23:08:09.000Z",
+    "isRetweet": false,
+    "isPinned": false,
+    "isReplyTo": false,
+    "text": "I'm a web developer",
+    "userMentions": [],
+    "hashtags": [],
+    "images": [
+      "https://pbs.twimg.com/media/EVHf__XU0AAvxiX.png"
+    ],
+    "urls": [],
+    "replyCount": 0,
+    "retweetCount": 0,
+    "favoriteCount": 1
+  },
+  {
+    "screenName": "conwaydev",
     "id": "1247707628312186886",
     "time": "2020-04-08T02:07:34.000Z",
     "isRetweet": false,
@@ -21,7 +39,7 @@
     ],
     "replyCount": 0,
     "retweetCount": 0,
-    "favoriteCount": 0
+    "favoriteCount": 2
   },
   {
     "screenName": "conwaydev",
@@ -149,7 +167,7 @@
     "urls": [],
     "replyCount": 1,
     "retweetCount": 0,
-    "favoriteCount": 1
+    "favoriteCount": 0
   },
   {
     "screenName": "conwaydev",

@@ -103,6 +103,13 @@ layout: default
           <img class="block lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ tweet.images }}" loading="lazy" alt="" />
         {% endif %}
       </div>
+
+      {% if tweet.urls %}
+        {% for url in tweet.urls %}
+          <p><a class="inline-block p-2" href="{{ url.url }}">{{ url.url }}</a></p>
+        {% endfor %}
+      {% endif %}
+
       <p>
         <a class="p-2 text-gray-700 hover:text-blue-600" href="https://twitter.com/conwaydev/status/{{ tweet.id }}" target="_blank" rel="noopener noreferrer">
           <span class="sr-only">View tweet at </span>

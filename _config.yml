@@ -21,6 +21,8 @@ navigation:
   url: /
 - title: Writing
   url: /writing/
+- title: Uses
+  url: /uses/
 footer_social:
 - name: Twitter
   url: https://twitter.com/conwaydev

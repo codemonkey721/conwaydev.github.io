@@ -1,12 +1,15 @@
 ---
+title: Writing
 layout: default
 permalink: /writing/
 ---
 
-<section class="max-w-6xl mx-auto lg:py-8 flex flex-wrap">
-    <div class="w-full lg:w-1/2 px-2 mt-4 lg:mt-0">
-        <h2 class="text-2xl text-gray-700 mt-0 px-2">Writing</h2>
+<section class="max-w-6xl mx-auto px-4 lg:py-8">
+    <h1 class="my-0 text-5xl text-gray-700">
+        Writing
+    </h1>
 
+    <div class="max-w-3xl mt-4">
         {% for post in site.posts %}
         <article {% if forloop.first == false %}class="mt-8"{%endif%}>
             <a class="block p-2 text-black hover:text-blue-600" href="{{ post.url | prepend: site.baseurl }}">

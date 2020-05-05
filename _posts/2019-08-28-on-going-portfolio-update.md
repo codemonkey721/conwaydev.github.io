@@ -1,6 +1,6 @@
 ---
 title: On-going Portfolio Update
-date: 2019-08-28 01:33:07.648000000 Z
+date: 2019-08-28 01:33:07 Z
 categories:
 - writing
 layout: post

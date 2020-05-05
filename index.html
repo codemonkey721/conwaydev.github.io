@@ -19,12 +19,7 @@ layout: default
 
     <p>👋 Howdy! I’m a Chicago-based front-end developer currently working as an engineering manager at <a class="text-black hover:text-blue-600" href="//sproutsocial.com" target="_blank" rel="noreferrer">Sprout&nbsp;Social</a> and I’m passionate about the web and pork. I’m a newer dad who has spent over ten years solving problems with web technologies. I’m always interested in finding new ways to develop challenging and innovative web products.</p>
 
-    <p>You can reach me at
-      <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="https://twitter.com/conwaydev">Twitter</a>,
-      <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="https://github.com/conwaydev/">GitHub</a>,
-      <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="http://codepen.io/conwaydev/">CodePen</a>,
-      <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="https://www.linkedin.com/in/justin-conway-a2260a94">LinkedIn</a>, or
-      <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="mailto:justin@conwaydev.com" title="Email">by email</a>.
+    <p>You can reach me at {% for social in site.footer_social %}{% if forloop.last %} or by{% endif %} <a target="_blank" class="text-black hover:text-blue-600" rel="noreferrer" href="{{social.url}}">{{social.name}}</a>{% if forloop.last == false %},{% endif %}{% endfor %}.
     </p>
   </div>
 </section>

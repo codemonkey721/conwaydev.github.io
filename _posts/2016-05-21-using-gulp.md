@@ -2,7 +2,7 @@
 title: Using Gulp in a Jekyll Project
 date: 2016-05-21 03:50:24 Z
 categories:
-- blog
+- writing
 layout: post
 description: A brief look at using Gulp inside of a Jekyll project to manage your
   asset building.

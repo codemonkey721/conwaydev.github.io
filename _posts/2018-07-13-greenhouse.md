@@ -2,7 +2,7 @@
 title: Why Greenhouse Rules
 date: 2018-07-13 21:50:24 Z
 categories:
-- blog
+- writing
 layout: post
 description: An introduction to what I feel is the best hiring software that I’ve
   used so far.

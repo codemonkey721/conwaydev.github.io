@@ -21,6 +21,6 @@
 
   {% include footer.html %}
 
-  <script async src="/js/index.min.js"></script>
+  <script async src="{{ base.url | prepend: site.url }}/js/index.min.js"></script>
 </body>
 </html>

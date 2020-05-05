@@ -2,7 +2,7 @@
 title: Top 5 Favorite Album Covers
 date: 2020-01-03 03:50:24 Z
 categories:
-- blog
+- writing
 layout: post
 description: As much as I don't like music, I can sure appreciate a well designed
   album cover.

@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /writing/
+---
+
+<section class="max-w-6xl mx-auto lg:py-8 flex flex-wrap">
+    <div class="w-full lg:w-1/2 px-2 mt-4 lg:mt-0">
+        <h2 class="text-2xl text-gray-700 mt-0 px-2">Writing</h2>
+
+        {% for post in site.posts %}
+        <article {% if forloop.first == false %}class="mt-8"{%endif%}>
+            <a class="block p-2 text-black hover:text-blue-600" href="{{ post.url | prepend: site.baseurl }}">
+                <h2 class="text-3xl my-0">
+                    {{ post.title }}
+                </h2>
+
+                <time class="block mt-2 text-sm" datetime="{{post.date}}">
+                    {{ post.date | date: "%b %-d, %Y" }}
+                </time>
+            </a>
+
+            <div class="mt-2 p-2">
+                {% if post.description %}
+                    <p>{{ post.description }}</p>
+                {% else %}
+                    {{ post.excerpt }}
+                {% endif %}
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>

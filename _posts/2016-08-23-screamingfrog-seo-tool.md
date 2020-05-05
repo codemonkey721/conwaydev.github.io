@@ -2,7 +2,7 @@
 title: 2 Awesome Uses for Screaming Frog
 date: 2016-08-23 21:50:24 Z
 categories:
-- blog
+- writing
 layout: post
 description: Introduction to the Screaming Frog SEO software as well as some interesting
   use cases for it.

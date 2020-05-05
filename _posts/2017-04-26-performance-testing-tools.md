@@ -2,7 +2,7 @@
 title: Performance Testing Tools
 date: 2017-04-26 21:50:00 Z
 categories:
-- blog
+- writing
 description: A dive into tooling around web page performance to allow developers to
   create better web experiences.
 layout: post

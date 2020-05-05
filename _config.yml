@@ -5,13 +5,7 @@ collections:
   posts:
     title: Posts
     output: true
-  projects:
-    title: Projects
-    output: true
-  tweets:
-    title: Tweets
-    output: true
-    sort_by: date
+    permalink: /:categories/:title/
   uploads:
     title: Uploads
     output: true
@@ -22,6 +16,11 @@ url: https://conwaydev.com
 twitter_username: conwaydev
 github_username: conwaydev
 markdown: kramdown
+navigation:
+- title: Home
+  url: /
+- title: Writing
+  url: /writing/
 footer_social:
 - name: Twitter
   url: https://twitter.com/conwaydev

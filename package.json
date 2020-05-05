@@ -6,9 +6,11 @@
   "homepage": "https://conwaydev.com",
   "scripts": {
     "build:styles": "postcss _css/tailwind.css -o _includes/css/tailwind.css",
+    "build:styles:dev": "postcss _css/tailwind.css -o _includes/css/tailwind.css -u tailwindcss",
     "build:js": "webpack",
-    "build": "jekyll build && yarn build:styles && yarn build:js",
-    "develop": "yarn build:styles && yarn build:js && jekyll serve",
+    "build": "jekyll build && yarn build:js && yarn build:styles",
+    "build:dev": "yarn build:js && yarn build:styles:dev",
+    "develop": "yarn build:dev && jekyll serve",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d _site",
     "fetch-tweets": "scrape-twitter timeline conwaydev | jq -r '.' > _data/tweets.json"

@@ -58,7 +58,7 @@ layout: default
           {{ post.title }}
         </h2>
 
-        <time class="block mt-0 text-sm" datetime="{{post.date}}">
+        <time class="block mt-2 text-sm" datetime="{{post.date}}">
           {{ post.date | date: "%b %-d, %Y" }}
         </time>
       </a>
@@ -73,7 +73,7 @@ layout: default
     </article>
     {% endfor %}
 
-    <p class="text-sm p-2"><strong>Older posts:</strong></p>
+    <p class="text-sm p-2">Older posts:</p>
 
     {% for post in site.posts offset:1 limit:4 %}
     <a class="block w-full p-2 mt-4 text-black hover:text-blue-600" href="{{ post.url | prepend: site.baseurl }}">
@@ -81,11 +81,17 @@ layout: default
         {{ post.title }}
       </h2>
 
-      <time class="block mt-0 text-sm" datetime="{{post.date}}">
+      <time class="block mt-2 text-sm" datetime="{{post.date}}">
         {{ post.date | date: "%b %-d, %Y" }}
       </time>
     </a>
     {% endfor %}
+
+    <p class="mb-0">
+      <a href="/writing/" class="block text-sm hover:text-blue-600 p-2">
+        View all writing
+      </a>
+    </p>
   </div>
   <div class="w-full lg:w-1/2 px-2 mt-4 lg:mt-0">
     <h2 class="text-2xl text-gray-700 mt-0 px-2">Tweets</h2>
@@ -101,12 +107,12 @@ layout: default
 
       {% if tweet.urls %}
         {% for url in tweet.urls %}
-          <p><a class="inline-block p-2" href="{{ url.url }}">{{ url.url }}</a></p>
+          <p><a class="block p-2" href="{{ url.url }}">{{ url.url }}</a></p>
         {% endfor %}
       {% endif %}
 
       <p>
-        <a class="p-2 text-gray-700 hover:text-blue-600" href="https://twitter.com/conwaydev/status/{{ tweet.id }}" target="_blank" rel="noopener noreferrer">
+        <a class="block p-2 text-gray-700 hover:text-blue-600" href="https://twitter.com/conwaydev/status/{{ tweet.id }}" target="_blank" rel="noopener noreferrer">
           <span class="sr-only">View tweet at </span>
           {{ tweet.time | date: "%b %d, %Y" }}
         </a>
@@ -114,8 +120,10 @@ layout: default
     </div>
     {% endfor %}
 
-    <a class="text-sm hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">
-      View all tweets
-    </a>
+    <p class="mb-0">
+      <a class="block text-sm hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">
+        View all tweets
+      </a>
+    </p>
   </div>
 </section>

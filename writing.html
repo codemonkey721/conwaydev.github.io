@@ -5,7 +5,7 @@ layout: default
 ---
 
 <section class="max-w-6xl mx-auto px-4 lg:py-8">
-    <h1 class="my-0 text-5xl text-gray-700">
+    <h1>
         Writing
     </h1>
 
@@ -17,7 +17,7 @@ layout: default
                     {{ post.title }}
                 </h2>
 
-                <time class="block mt-2 text-sm" datetime="{{post.date}}">
+                <time class="block mt-2" datetime="{{post.date}}">
                     {{ post.date | date: "%b %-d, %Y" }}
                 </time>
             </a>

@@ -58,7 +58,7 @@ layout: default
           {{ post.title }}
         </h2>
 
-        <time class="block mt-2 text-sm" datetime="{{post.date}}">
+        <time class="block mt-2" datetime="{{post.date}}">
           {{ post.date | date: "%b %-d, %Y" }}
         </time>
       </a>
@@ -73,7 +73,7 @@ layout: default
     </article>
     {% endfor %}
 
-    <p class="text-sm p-2">Older posts:</p>
+    <p class="p-2">Older posts:</p>
 
     {% for post in site.posts offset:1 limit:4 %}
     <a class="block w-full p-2 mt-4 text-black hover:text-blue-600" href="{{ post.url | prepend: site.baseurl }}">
@@ -81,14 +81,14 @@ layout: default
         {{ post.title }}
       </h2>
 
-      <time class="block mt-2 text-sm" datetime="{{post.date}}">
+      <time class="block mt-2" datetime="{{post.date}}">
         {{ post.date | date: "%b %-d, %Y" }}
       </time>
     </a>
     {% endfor %}
 
     <p class="mb-0">
-      <a href="/writing/" class="block text-sm hover:text-blue-600 p-2">
+      <a href="/writing/" class="block hover:text-blue-600 p-2">
         View all writing
       </a>
     </p>
@@ -97,7 +97,7 @@ layout: default
     <h2 class="text-2xl text-gray-700 mt-0 px-2">Tweets</h2>
 
     {% for tweet in site.data.tweets limit:4 %}
-    <div class="text-sm {% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
+    <div class="{% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
       <div class="p-2">
         {{ tweet.text }}
         {% if tweet.images %}
@@ -121,7 +121,7 @@ layout: default
     {% endfor %}
 
     <p class="mb-0">
-      <a class="block text-sm hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">
+      <a class="block hover:text-blue-600 p-2" href="https://twitter.com/conwaydev/" target="_blank" rel="noopener noreferrer">
         View all tweets
       </a>
     </p>

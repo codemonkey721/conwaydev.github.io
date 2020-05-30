@@ -5,95 +5,55 @@ a {
     text-decoration: underline;
 }
 
-html {
-    font-size: 1rem;
-}
-
 body {
     font-family: "Roboto Mono", "Andale Mono", "PT Mono", monospace;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.45;
 }
 
 h1 {
-    margin: 1.414em 0 .5em;
-    font-weight: inherit;
-    line-height: 1.2;
+  @apply text-5xl;
+  @apply font-bold;
+  @apply text-gray-700;
+  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 h2 {
-  margin: 1.414em 0 .5em;
-  font-weight: inherit;
-  line-height: 1.2;
+  @apply text-3xl;
+  @apply font-bold;
+  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 h3 {
-  margin: 1.414em 0 .5em;
-  font-weight: inherit;
-  line-height: 1.2;
+  @apply text-2xl;
+  @apply font-bold;
+  @apply text-gray-700;
+  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 h4 {
-  margin: 1.414em 0 .5em;
-  font-weight: inherit;
-  line-height: 1.2;
-}
-
-h1 {
+  @apply text-xl;
+  @apply font-bold;
   font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-weight: 600;
 }
 
-h2 {
-  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
+h1 + * {
+    @apply mt-6;
 }
 
-h3 {
-  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
+h2 + *,
+h3 + *,
+h4 + *,
+ol + *,
+p + *,
+blockquote + *,
+iframe + * {
+    @apply mt-5;
 }
 
-h4 {
-  font-family: 'Poppins', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
-}
-
-h1 {
-    font-size: 2.369rem;
-    margin-top: 0;
-}
-
-h2 {
-    font-size: 1.777rem;
-}
-
-
-h3 {
-    font-size: 1.777rem;
-}
-
-h4 {
-    font-size: 1.333em;
-}
-
-small {
-    font-size: .75rem;
-}
-
-
-@media (min-width: 52rem) {
-    html {
-        font-size: 1.125rem;
-    }
-    h1 {
-        font-size: 3.157rem;
-    }
-    h2 {
-        font-size: 2.369rem;
-    }
+li + li {
+    @apply mt-4;
 }
 
 header .sr-only:focus {

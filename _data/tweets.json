@@ -1,6 +1,53 @@
 [
   {
     "screenName": "conwaydev",
+    "id": "1262449253584076800",
+    "time": "2020-05-18T18:25:31.000Z",
+    "isRetweet": false,
+    "isPinned": false,
+    "isReplyTo": false,
+    "text": "Today my pal @MPatterson22 nominated me for an award within our marketing team! Thanks buddy, so stoked we get to make cool things at @SproutSocial",
+    "userMentions": [
+      {
+        "screenName": "MPatterson22",
+        "indices": [
+          13,
+          26
+        ]
+      },
+      {
+        "screenName": "SproutSocial",
+        "indices": [
+          134,
+          147
+        ]
+      }
+    ],
+    "hashtags": [],
+    "images": [],
+    "urls": [],
+    "replyCount": 2,
+    "retweetCount": 0,
+    "favoriteCount": 11
+  },
+  {
+    "screenName": "conwaydev",
+    "id": "1258217548828590081",
+    "time": "2020-05-07T02:10:14.000Z",
+    "isRetweet": false,
+    "isPinned": false,
+    "isReplyTo": false,
+    "text": "Writing scripts that migrate data from one place to another and not worrying about the performance or \"terseness\" is definitely my new vice",
+    "userMentions": [],
+    "hashtags": [],
+    "images": [],
+    "urls": [],
+    "replyCount": 0,
+    "retweetCount": 0,
+    "favoriteCount": 2
+  },
+  {
+    "screenName": "conwaydev",
     "id": "1248024865585737729",
     "time": "2020-04-08T23:08:09.000Z",
     "isRetweet": false,
@@ -167,7 +214,7 @@
     "urls": [],
     "replyCount": 1,
     "retweetCount": 0,
-    "favoriteCount": 0
+    "favoriteCount": 2
   },
   {
     "screenName": "conwaydev",
@@ -4743,7 +4790,7 @@
     "retweetCount": 0,
     "favoriteCount": 0,
     "quote": {
-      "screenName": "lukew",
+      "screenName": "LukeW",
       "id": "768260944669515776",
       "text": "we just made our Spaces Chrome extension lots better: https://chrome.google.com/webstore/detail/spaces/mddphfbicdnihfelkdldokplanidjhnl?hl=en …\n& more to come… pic.twitter.com/hI1C4NUcyL"
     }
@@ -11563,603 +11610,6 @@
         "indices": [
           50,
           90
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "523141308949336064",
-    "time": "2014-10-17T15:59:42.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "ReactJS For Stupid People by @andrewray http://blog.andrewray.me/reactjs-for-stupid-people/ …",
-    "userMentions": [
-      {
-        "screenName": "andrewray",
-        "indices": [
-          29,
-          39
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://blog.andrewray.me/reactjs-for-stupid-people/",
-        "indices": [
-          40,
-          91
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "523123996783423488",
-    "time": "2014-10-17T14:50:54.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "Come learn about load testing techniques using apache Jmeter, AB, Siege and cloud tools like loader.io and blitz.io. http://meetu.ps/2BbhN0 ",
-    "userMentions": [],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://meetu.ps/2BbhN0",
-        "indices": [
-          117,
-          139
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 1,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "522849720704569346",
-    "time": "2014-10-16T20:41:02.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": true,
-    "text": "Getting all giffy “@StageBloc: We love it when you keep the conversation going. Try replying directly to comments! ”",
-    "userMentions": [
-      {
-        "screenName": "StageBloc",
-        "indices": [
-          19,
-          29
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 2
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "522754406387695616",
-    "time": "2014-10-16T14:22:17.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "CSS-Only Solution For UI Tracking http://www.smashingmagazine.com/2014/10/16/css-only-solution-for-ui-tracking/ … via @smashingmag",
-    "userMentions": [
-      {
-        "screenName": "smashingmag",
-        "indices": [
-          118,
-          130
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://www.smashingmagazine.com/2014/10/16/css-only-solution-for-ui-tracking/",
-        "indices": [
-          34,
-          111
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 1
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "522401770723500033",
-    "time": "2014-10-15T15:01:02.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "Very awesome http://mapsdesign.tumblr.com/ ",
-    "userMentions": [],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://mapsdesign.tumblr.com/",
-        "indices": [
-          13,
-          42
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "521099732786380800",
-    "time": "2014-10-12T00:47:12.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "Ball hard",
-    "userMentions": [],
-    "hashtags": [],
-    "images": [
-      "https://pbs.twimg.com/media/BztRcZgIgAAC6Kc.png"
-    ],
-    "urls": [],
-    "replyCount": 1,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "520583401229660162",
-    "time": "2014-10-10T14:35:29.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "10 Top Mistakes Angular.js Developers Make http://po.st/u7gjIV  via @airpair",
-    "userMentions": [
-      {
-        "screenName": "airpair",
-        "indices": [
-          68,
-          76
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://po.st/u7gjIV",
-        "indices": [
-          43,
-          62
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "520269316210438144",
-    "time": "2014-10-09T17:47:25.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "Will code for watch http://www.ebay.com/itm/111345345275 …",
-    "userMentions": [],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://www.ebay.com/itm/111345345275",
-        "indices": [
-          20,
-          56
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "519874690936868864",
-    "time": "2014-10-08T15:39:19.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "I made a thing using StageBloc to pull in SoundCloud files for a mixtape type deal http://stgb.lc/ap/2aN ",
-    "userMentions": [],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://stgb.lc/ap/2aN",
-        "indices": [
-          83,
-          104
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "518061950350028800",
-    "time": "2014-10-03T15:36:08.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "Client provided assets <3",
-    "userMentions": [],
-    "hashtags": [],
-    "images": [
-      "https://pbs.twimg.com/media/BzCGmOvCIAECygv.png"
-    ],
-    "urls": [],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "516642331848499200",
-    "time": "2014-09-29T17:35:05.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "\"Intro to AngularJS\" brought to you by @thinkful http://www.thinkful.com/learn/angularjs-tutorial-build-a-gmail-clone/ …",
-    "userMentions": [
-      {
-        "screenName": "thinkful",
-        "indices": [
-          39,
-          48
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://www.thinkful.com/learn/angularjs-tutorial-build-a-gmail-clone/",
-        "indices": [
-          49,
-          118
-        ]
-      }
-    ],
-    "replyCount": 1,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "516641670171856898",
-    "time": "2014-09-29T17:32:27.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "Advanced Debugging Techniques with Chrome - @Scale 2014 - Web: http://youtu.be/B63jNjSVEbQ  via @YouTube",
-    "userMentions": [
-      {
-        "screenName": "Scale",
-        "indices": [
-          44,
-          50
-        ]
-      },
-      {
-        "screenName": "YouTube",
-        "indices": [
-          96,
-          104
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://youtu.be/B63jNjSVEbQ",
-        "indices": [
-          63,
-          90
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 1,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "512245462590447616",
-    "time": "2014-09-17T14:23:30.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "The Bezier Game http://bezier.method.ac/  via @SidebarIO",
-    "userMentions": [
-      {
-        "screenName": "SidebarIO",
-        "indices": [
-          46,
-          56
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://bezier.method.ac/",
-        "indices": [
-          16,
-          40
-        ]
-      }
-    ],
-    "replyCount": 1,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "509708131673194496",
-    "time": "2014-09-10T14:21:03.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "This is why your Internet is slow. It will get worse, unless we stop it now: http://battleforthenet.com  #InternetSlowdown",
-    "userMentions": [],
-    "hashtags": [
-      {
-        "hashtag": "InternetSlowdownpic",
-        "indices": [
-          105,
-          125
-        ]
-      }
-    ],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://battleforthenet.com",
-        "indices": [
-          77,
-          103
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "509454386565615616",
-    "time": "2014-09-09T21:32:45.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "This is awesome <3 .@zeldman http://vimeo.com/104641191 ",
-    "userMentions": [
-      {
-        "screenName": "zeldman",
-        "indices": [
-          20,
-          28
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://vimeo.com/104641191",
-        "indices": [
-          29,
-          55
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "509179711713722368",
-    "time": "2014-09-09T03:21:18.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": ".@jdhartley funny dork makes me go 😐 a lot",
-    "userMentions": [
-      {
-        "screenName": "jdhartley",
-        "indices": [
-          1,
-          11
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 3
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "505121209953300481",
-    "time": "2014-08-28T22:34:15.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "Just tell me I have low credit on my ventra card so I don't run the risk of humiliation by the worlds most stubborn bus driver",
-    "userMentions": [],
-    "hashtags": [],
-    "images": [],
-    "urls": [],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 3
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "502123229243129857",
-    "time": "2014-08-20T16:01:21.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "#LIFESASTAGE",
-    "userMentions": [],
-    "hashtags": [
-      {
-        "hashtag": "LIFESASTAGEpic",
-        "indices": [
-          0,
-          15
-        ]
-      }
-    ],
-    "images": [
-      "https://pbs.twimg.com/media/BvfmamWCEAAiNfQ.png"
-    ],
-    "urls": [],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 3
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "501789042652884992",
-    "time": "2014-08-19T17:53:25.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "The Current State Of E-Commerce Search http://www.smashingmagazine.com/2014/08/18/the-current-state-of-e-commerce-search/ … via @smashingmag",
-    "userMentions": [
-      {
-        "screenName": "smashingmag",
-        "indices": [
-          128,
-          140
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://www.smashingmagazine.com/2014/08/18/the-current-state-of-e-commerce-search/",
-        "indices": [
-          39,
-          121
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 1,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "501579635084103680",
-    "time": "2014-08-19T04:01:18.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "Favicons, Touch Icons, Tile Icons, etc. What All Do You Need? http://css-tricks.com/favicon-quiz/  via @real_css_tricks",
-    "userMentions": [
-      {
-        "screenName": "real_css_tricks",
-        "indices": [
-          103,
-          119
-        ]
-      }
-    ],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://css-tricks.com/favicon-quiz/",
-        "indices": [
-          62,
-          97
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 1
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "501579407258300416",
-    "time": "2014-08-19T04:00:24.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "<3 flex http://snook.ca/archives/html_and_css/rethinking-the-grid …",
-    "userMentions": [],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://snook.ca/archives/html_and_css/rethinking-the-grid",
-        "indices": [
-          8,
-          65
-        ]
-      }
-    ],
-    "replyCount": 0,
-    "retweetCount": 0,
-    "favoriteCount": 0
-  },
-  {
-    "screenName": "conwaydev",
-    "id": "501035361418883072",
-    "time": "2014-08-17T15:58:33.000Z",
-    "isRetweet": false,
-    "isPinned": false,
-    "isReplyTo": false,
-    "text": "http://webuild.envato.com/blog/styleguide-driven-development/ …",
-    "userMentions": [],
-    "hashtags": [],
-    "images": [],
-    "urls": [
-      {
-        "url": "http://webuild.envato.com/blog/styleguide-driven-development/",
-        "indices": [
-          0,
-          61
         ]
       }
     ],

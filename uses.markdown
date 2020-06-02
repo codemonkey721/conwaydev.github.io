@@ -6,7 +6,7 @@ layout: default
 ---
 
 <section class="max-w-6xl mx-auto px-4 lg:py-8">
-    <h1 class="my-0 text-5xl text-gray-700">
+    <h1>
         Uses
     </h1>
 

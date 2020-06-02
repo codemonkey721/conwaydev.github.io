@@ -30,10 +30,13 @@ Uses
             <li>
                 <a href="https://www.notion.so/" target="_blank" rel="noreferrer">Notion</a>. My entire life is now managed within this application, its crazy. I maintain a TODO list, create long term goals and track to them, and I write all my 1-1 and meeting notes in it, what a beautiful piece of software. Once they have a nice/ available API I will likely use it as a CMS for this site.
             </li>
+            <li>
+                <a href="https://github.com/TermiT/Flycut" target="_blank" rel="noreferrer">Flycut</a>. Web developers are notorious copy/ pasters and I am no different, Flycut is a lifeline for me to hold on to 50 or so strings so I can quickly go back to something I copied earlier.
+            </li>
         </ul>
     
         <p class="mt-8">
-            <em>**Last updated 05/04/2020**</em>
+            <em>**Last updated 06/01/2020**</em>
         </p>
     </div>
 

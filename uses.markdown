@@ -6,9 +6,9 @@ layout: default
 ---
 
 <section class="max-w-6xl mx-auto px-4 lg:py-8">
-    <h1>
-        Uses
-    </h1>
+<h1>
+Uses
+</h1>
 
     <div class="max-w-3xl mt-4">
         <ul class="list-disc pl-6">
@@ -31,9 +31,10 @@ layout: default
                 <a href="https://www.notion.so/" target="_blank" rel="noreferrer">Notion</a>. My entire life is now managed within this application, its crazy. I maintain a TODO list, create long term goals and track to them, and I write all my 1-1 and meeting notes in it, what a beautiful piece of software. Once they have a nice/ available API I will likely use it as a CMS for this site.
             </li>
         </ul>
-
+    
         <p class="mt-8">
             <em>**Last updated 05/04/2020**</em>
         </p>
     </div>
+
 </section>

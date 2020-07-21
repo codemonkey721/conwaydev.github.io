@@ -43,6 +43,6 @@
     "webpack-cli": "^3.0.8"
   },
   "dependencies": {
-    "tailwindcss": "^1.1.2"
+    "tailwindcss": "^1.5.2"
   }
 }

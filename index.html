@@ -4,7 +4,7 @@ layout: default
 
 <section class="max-w-6xl mx-auto flex flex-wrap lg:items-center lg:flex-row-reverse">
   <div class="w-full lg:w-1/2 px-4">
-    <div class="offset-shadow relative">
+    <div class="relative">
       <img
         class="db w-full h-auto relative z-10"
         src="assets/img/headshot.jpg"
@@ -16,7 +16,7 @@ layout: default
     </div>
   </div>
 
-  <div class="w-full lg:w-1/2 px-4 mt-6 lg:mt-0">
+  <div class="w-full lg:w-1/2 px-4 mt-6 lg:mt-0 prose xl:prose-lg max-w-full">
     <h1>Justin Conway</h1>
 
     <p>👋 Howdy! I’m a Chicago-based front-end developer currently working as an engineering manager at <a class="text-black hover:text-blue-600" href="//sproutsocial.com" target="_blank" rel="noreferrer">Sprout&nbsp;Social</a> and I’m passionate about the web and pork. I’m a newer dad who has spent over ten years solving problems with web technologies. I’m always interested in finding new ways to develop challenging and innovative web products.</p>
@@ -67,7 +67,7 @@ layout: default
         </time>
       </a>
 
-      <div class="mt-2 p-2">
+      <div class="mt-2 p-2 prose xl:prose-lg max-w-full">
         {% if post.description %}
         <p>{{ post.description }}</p>
         {% else %}
@@ -102,7 +102,7 @@ layout: default
 
     {% for tweet in site.data.tweets limit:4 %}
     <div class="{% if forloop.first == false %}border-t border-gray-300 mt-2 pt-2{% endif %}">
-      <div class="p-2">
+      <div class="p-2 prose xl:prose-lg">
         {{ tweet.text }}
         {% if tweet.images %}
         <img class="block lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ tweet.images }}" loading="lazy" alt=""/>
@@ -111,7 +111,7 @@ layout: default
 
       {% if tweet.urls %}
         {% for url in tweet.urls %}
-          <p><a class="block p-2" href="{{ url.url }}">{{ url.url }}</a></p>
+          <p><a class="block p-2 prose xl:prose-lg" href="{{ url.url }}">{{ url.url }}</a></p>
         {% endfor %}
       {% endif %}
 

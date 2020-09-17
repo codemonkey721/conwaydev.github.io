@@ -1,0 +1,30 @@
+---
+title: Writing
+permalink: "/amp-iframe-example/"
+layout: blank
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AMP Iframe example</title>
+  </head>
+  <body>
+    <p>I'm a cool iframe with a little script inside me that post messages to my parent window in order to resize me! Thats all I am!</p> The code i'm running is found at <a href="https://amp.dev/documentation/components/amp-iframe/#iframe-resizing">https://amp.dev/documentation/components/amp-iframe/#iframe-resizing</a>.
+
+    <script>
+      window.parent.postMessage(
+        {
+          sentinel: 'amp',
+          type: 'embed-size',
+          height: document.body.scrollHeight,
+        },
+        '*'
+      );
+    </script>
+  </body>
+</html>

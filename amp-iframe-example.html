@@ -17,14 +17,32 @@ layout: blank
     <p>I'm a cool iframe with a little script inside me that post messages to my parent window in order to resize me! Thats all I am!</p> The code i'm running is found at <a href="https://amp.dev/documentation/components/amp-iframe/#iframe-resizing">https://amp.dev/documentation/components/amp-iframe/#iframe-resizing</a>.
 
     <script>
-      window.parent.postMessage(
-        {
-          sentinel: 'amp',
-          type: 'embed-size',
-          height: document.body.scrollHeight,
-        },
-        '*'
-      );
+      function ready(fn) {
+        if (document.readyState !== 'loading') {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+
+      ready(function() {
+        window.parent.postMessage(
+          {
+            sentinel: 'amp',
+            type: 'embed-ready',
+          },
+          '*'
+        );
+
+        window.parent.postMessage(
+          {
+            sentinel: 'amp',
+            type: 'embed-size',
+            height: document.body.scrollHeight,
+          },
+          '*'
+        );
+      });
     </script>
   </body>
 </html>

@@ -5,7 +5,6 @@ permalink: "/amp-iframe-example-2/"
 layout: blank
 ---
 
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">

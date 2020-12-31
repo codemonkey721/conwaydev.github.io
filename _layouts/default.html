@@ -9,7 +9,11 @@
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <noscript>
   <link href="https://fonts.googleapis.com/css?family=Poppins:600|Roboto+Mono:400,700&display=swap" rel="stylesheet">
+  </noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600|Roboto+Mono:400,700&display=swap" media="print" onload="this.media='all'">
+
   <style>{% include css/tailwind.css %}</style>
 </head>
 <body>

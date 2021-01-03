@@ -73,3 +73,6 @@ exclude:
 - webpack.production.config.js
 - s3_website.yml
 - assets/svg
+- yarn.lock
+- tailwind.config.js
+- postcss.config.js

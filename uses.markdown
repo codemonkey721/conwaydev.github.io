@@ -19,6 +19,6 @@ layout: page
 
 * <a href="https://github.com/TermiT/Flycut" target="_blank" rel="noreferrer">Flycut</a>. Web developers are notorious copy/ pasters and I am no different, Flycut is a lifeline for me to hold on to 50 or so strings so I can quickly go back to something I copied earlier.
 
-* Pen & Paper. The biggest shift I made early last year was being intentional about not bringing my laptop to in-person meetings and instead rather taking a notepad and pen and being thoughtful about the notes I take. This became particularly impactful for 1-1s, and it may seem like it takes more time to digitally document it in our tools like Lattice or Confluence, it has helped significantly in my memory of the meetings and conversations.
+* Pen & paper. The biggest shift I made early last year was being intentional about not bringing my laptop to in-person meetings and instead rather taking a notepad and pen and being thoughtful about the notes I take. This became particularly impactful for 1-1s, and it may seem like it takes more time to digitally document it in our tools like Lattice or Confluence, it has helped significantly in my memory of the meetings and conversations.
 
 <em>**Last updated 01/03/2021**</em>

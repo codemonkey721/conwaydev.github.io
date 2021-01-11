@@ -4,8 +4,9 @@ date: 2021-01-10 21:10:00 Z
 categories:
 - writing
 layout: post
-description: 'Walk through of the process of a third attempt of making a simple web application. Will this one stick?'
-featured_img: '/assets/img/sketch.png'
+description: Walk through of the process of a third attempt of making a simple web
+  application. Will this one stick?
+featured_img: "/assets/img/sketch.png"
 ---
 
 Over the past year, I've made 2 separate attempts at creating a simple web app for my wife and me to share recipes we find online and track when we make them. It also started because I was interested in seeing if I could scrape NYT Cooking and AllRecipes to store in a centralized location, not that I would do that because that's highly against their terms of service 🤫. Application sounds simple enough, right? Sure, but for some reason, I always abandon the project while I'm building because I'll get hung up on a particular feature or just generally lose interest. Sound familiar? We've continued writing down our week's dinners on our kitchen wallboard and it *works* but...

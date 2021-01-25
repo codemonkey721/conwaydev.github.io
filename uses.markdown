@@ -5,7 +5,7 @@ permalink: "/uses/"
 layout: page
 ---
 
-* <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">Code</a>. I was a pretty intense advocate for PHPStorm over the last 10 years with most of my work being based in WordPress or Magento, but Code being open-source and having such a fantastic community around it solves my development needs. I also love the high-contrast theme it ships with.
+* <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">Visual Studio Code</a>. I was a pretty intense advocate for PHPStorm over the last 10 years with most of my work being based in WordPress or Magento, but Code being open-source and having such a fantastic community around it solves my development needs. I also love the high-contrast theme it ships with.
 
 * <a href="https://www.iterm2.com/" target="_blank" rel="noreferrer">iTerm2</a>. Someone told me that you could do really neat things with themes and I am likely only using 5% of its capabilities, but its awesome and allows me to forget terminal commands and have it save them for seemingly ever.
 

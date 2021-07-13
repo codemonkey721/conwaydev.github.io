@@ -6,7 +6,7 @@
   "homepage": "https://conwaydev.com",
   "scripts": {
     "build:styles": "postcss _css/tailwind.css -o _includes/css/tailwind.css",
-    "build:styles:dev": "postcss _css/tailwind.css -o _includes/css/tailwind.css -u tailwindcss",
+    "build:styles:dev": "postcss _css/tailwind.css -o css/tailwind.css -u tailwindcss",
     "build:js": "webpack",
     "build": "jekyll build && yarn build:js && yarn build:styles",
     "build:dev": "yarn build:js && yarn build:styles:dev",

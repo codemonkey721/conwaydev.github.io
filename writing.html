@@ -4,7 +4,7 @@ permalink: "/writing/"
 layout: default
 ---
 
-<section class="max-w-6xl mx-auto px-4 lg:py-8">
+<section class="max-w-7xl mx-auto px-4 lg:py-8">
     <h1>
         Writing
     </h1>
@@ -12,17 +12,17 @@ layout: default
     <div class="max-w-3xl mt-4">
         {% for post in site.posts %}
         <article {% if forloop.first == false %}class="mt-8"{%endif%}>
-            <a class="block p-2 text-black hover:text-blue-600" href="{{ post.url | prepend: site.baseurl }}">
+            <a class="block p-2 text-blue-700 hover:text-blue-800" href="{{ post.url | prepend: site.baseurl }}">
                 <h2 class="text-3xl my-0">
                     {{ post.title }}
                 </h2>
 
-                <time class="block mt-2" datetime="{{post.date}}">
+                <time class="block mt-2 text-black no-underline" datetime="{{post.date}}">
                     {{ post.date | date: "%b %-d, %Y" }}
                 </time>
             </a>
 
-            <div class="mt-2 p-2 prose xl:prose-lg max-w-full">
+            <div class="mt-2 p-2 prose xl:prose-lg max-w-full text-black">
                 {% if post.description %}
                     <p>{{ post.description }}</p>
                 {% else %}

@@ -1,5 +1,8 @@
 module.exports = {
   theme: {
+    maxWidth: {
+      '7xl': '92rem',
+    },
     typography: (theme) => ({
       default: {
         css: {

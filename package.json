@@ -28,7 +28,7 @@
     "url": "https://github.com/conwaydev/conwaydev.github.io/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^9.8.8",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

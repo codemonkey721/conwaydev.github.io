@@ -83,4 +83,10 @@ ul {
     100% { transform: rotate( 0.0deg) }
 }
 
+pre {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
 @tailwind utilities;

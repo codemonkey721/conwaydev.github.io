@@ -34,7 +34,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "cssnano": "^5.1.7",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^5.0.0",
     "postcss-cli": "^7.1.2",
     "postcss-uncss": "^0.17.0",
     "uncss": "^0.17.2",
